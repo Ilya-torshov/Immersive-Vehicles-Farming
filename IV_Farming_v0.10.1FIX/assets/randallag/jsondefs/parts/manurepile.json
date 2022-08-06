@@ -1,0 +1,27 @@
+{
+  "generic": {
+    "type": "interactable_crate"
+  },
+  "interactable": {
+    "interactionType": "crate",
+    "feedsVehicles": true,
+    "inventoryUnits": 1.0
+  },
+  "definitions": [
+    {
+      "subName": "",
+      "name": "Manure pile",
+      "extraMaterials": []
+    }
+  ],
+  "rendering": {
+    "lightObjects": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "name": "Manure pile",
+    "description": "Manure stacked high to spread on the field (place bonemeal inside to bonemeal crops)",
+    "health": 100,
+    "materials": ["minecraft:bone_meal:0:20"]
+  }
+}

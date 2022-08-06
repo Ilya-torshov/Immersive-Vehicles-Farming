@@ -1,0 +1,131 @@
+{
+  "effector": {
+    "type": "harvester",
+    "blocksWide": 3
+  },
+  "definitions": [
+    {
+      "subName": "_blue",
+      "name": "Harvester Header Blue",
+      "extraMaterials": []
+    },
+    {
+      "subName": "_green",
+      "name": "Harvester Header Green",
+      "extraMaterials": []
+    },
+    {
+      "subName": "_orange",
+      "name": "Harvester Header Orange",
+      "extraMaterials": []
+    },
+    {
+      "subName": "_red",
+      "name": "Harvester Header Red",
+      "extraMaterials": []
+    },
+    {
+      "subName": "_yellow",
+      "name": "Harvester Header Yellow",
+      "extraMaterials": []
+    }
+  ],
+  "prefixFolders": "",
+  "packID": "warkpavement",
+  "systemName": "wark_header",
+  "classification": "PART",
+  "general": {
+    "type": "effector_harvester",
+    "name": "Harvester Header",
+    "materials": ["minecraft:iron_ingot:0:10"]
+  },
+    "rendering": {
+    "animatedObjects": [
+      {
+        "objectName": "$roller_0",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "tick",
+            "centerPoint": [0.031076,0.93279,1.79717],
+            "axis": [4.0,0.0,0.0]
+          }
+        ]
+      }
+    ]
+  },
+	"collision": [
+		{
+			"pos" : [0.5, -0.1, 1.58889],
+			"width" : 1,
+			"height" : 0.2,
+			"isInterior": true
+		},
+		{
+			"pos" : [-0.5, -0.1, 1.58889],
+			"width" : 1,
+			"height" : 0.2,
+			"isInterior": true
+		},
+		{
+			"pos" : [-1.5, -0.1, 1.58889],
+			"width" : 1,
+			"height" : 0.2,
+			"isInterior": true
+		},
+		{
+			"pos" : [1.5, -0.1, 1.58889],
+			"width" : 1,
+			"height" : 0.2,
+			"isInterior": true
+		},
+		{
+			"pos" : [-2.5, -0.1, 1.58889],
+			"width" : 1,
+			"height" : 0.2,
+			"isInterior": true
+		},
+		{
+			"pos" : [2.5, -0.1, 1.58889],
+			"width" : 1,
+			"height" : 0.2,
+			"isInterior": true
+		},
+		{
+			"pos" : [0.5, -0.1, 0.58889],
+			"width" : 1,
+			"height" : 0.2,
+			"isInterior": true
+		},
+		{
+			"pos" : [-0.5, -0.1, 0.58889],
+			"width" : 1,
+			"height" : 0.2,
+			"isInterior": true
+		},
+		{
+			"pos" : [-1.5, -0.1, 0.58889],
+			"width" : 1,
+			"height" : 0.2,
+			"isInterior": true
+		},
+		{
+			"pos" : [1.5, -0.1, 0.58889],
+			"width" : 1,
+			"height" : 0.2,
+			"isInterior": true
+		},
+		{
+			"pos" : [-2.5, -0.1, 0.58889],
+			"width" : 1,
+			"height" : 0.2,
+			"isInterior": true
+		},
+		{
+			"pos" : [2.5, -0.1, 0.58889],
+			"width" : 1,
+			"height" : 0.2,
+			"isInterior": true
+		}
+	]
+}

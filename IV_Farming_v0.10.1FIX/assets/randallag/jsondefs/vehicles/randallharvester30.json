@@ -1,0 +1,120 @@
+{
+  "motorized": {
+    "emptyMass": 7900,
+    "brakingFactor": 1.0,
+    "dragCoefficient": 0.8
+  },
+  "parts": [
+    {
+      "pos": [3.21161,-0.09,0.0],
+      "minValue": 0.4,
+      "maxValue": 1.125,
+      "types": ["ground_wheel"]
+    },
+    {
+      "pos": [-1.65133,-0.09,0.0],
+      "minValue": 0.4,
+      "maxValue": 1.125,
+      "types": ["ground_wheel"]
+    },
+    {
+      "pos": [1.50126,0.0,2.16998],
+      "maxValue": 1.125,
+      "types": ["effector_harvester"]
+    },
+    {
+      "pos": [-0.7929,1.0,-0.397848],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 1.0,
+      "types": ["interactable_crate"]
+    },
+    {
+      "pos": [-0.7929,1.0,-0.900179],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 1.0,
+      "types": ["interactable_crate"]
+    },
+    {
+      "pos": [-0.7929,1.0,-1.41726],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 1.0,
+      "types": ["interactable_crate"]
+    },
+    {
+      "pos": [-0.7929,1.0,-1.91952],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 1.0,
+      "types": ["interactable_crate"]
+    }
+  ],
+  "collisionGroups": [
+    {
+      "collisions": [
+        {
+          "pos": [3.21161,-0.19,0.0],
+          "width": 0.125,
+          "height": 0.125
+        },
+        {
+          "pos": [-1.65133,-0.19,0.0],
+          "width": 0.125,
+          "height": 0.125
+        },
+        {
+          "pos": [-1.50308,-0.055847,4.03055],
+          "width": 0.125,
+          "height": 0.125
+        }
+      ]
+    }
+  ],
+  "connectionGroups": [
+    {
+      "groupName": "HOOKUP",
+      "isHookup": true,
+      "connections": [
+        {
+          "type": "Ring",
+          "pos": [-1.56929,-0.039503,4.68272],
+          "distance": 2.0
+        }
+      ]
+    }
+  ],
+  "instruments": [],
+  "definitions": [
+    {
+      "subName": "_randall",
+      "name": "Randall Harvester 30 (Randall)",
+      "extraMaterials": ["minecraft:dye:1:1"]
+    },
+    {
+      "subName": "_allis",
+      "name": "Randall Harvester 30 (Allis)",
+      "extraMaterials": ["minecraft:dye:14:1"]
+    },
+    {
+      "subName": "_cervidea",
+      "name": "Randall Harvester 30 (Cervidea)",
+      "extraMaterials": ["minecraft:dye:2:1"]
+    },
+    {
+      "subName": "_holtlant",
+      "name": "Randall Harvester 30 (Holtlant)",
+      "extraMaterials": ["minecraft:dye:12:1"]
+    }
+  ],
+  "rendering": {
+    "textObjects": [],
+    "animatedObjects": [],
+    "lightObjects": [],
+    "sounds": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "description": "A harvester that needs some help to move",
+    "health": 100,
+    "materials": ["minecraft:iron_ingot:0:30"]
+  }
+}

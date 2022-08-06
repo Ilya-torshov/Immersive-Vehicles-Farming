@@ -1,0 +1,6 @@
+{
+	"packID" : "warkpavement",
+	"packName" : "Wark Farming Pack",
+	"fileStructure" : 0,
+    "dependents": ["turbosparts", "unuparts", "trinparts"]
+}

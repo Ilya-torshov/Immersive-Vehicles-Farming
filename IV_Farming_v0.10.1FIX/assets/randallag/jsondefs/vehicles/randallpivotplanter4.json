@@ -1,0 +1,333 @@
+{
+  "motorized": {
+    "emptyMass": 3000,
+    "brakingFactor": 1.0,
+    "dragCoefficient": 0.8
+  },
+  "parts": [
+    {
+      "pos": [1.03429,-0.107214,-0.780501],
+      "minValue": 0.4,
+      "maxValue": 1.125,
+      "types": ["ground_wheel"]
+    },
+    {
+      "pos": [-1.0424,-0.107214,-0.780501],
+      "minValue": 0.4,
+      "maxValue": 1.125,
+      "types": ["ground_wheel"]
+    },
+    {
+      "pos": [0.5,0.247285,-0.772102],
+      "maxValue": 1.0,
+      "types": ["interactable_crate"],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "frame",
+          "centerPoint": [0.0,0.0,0.0],
+          "axis": [0.0,0.7,0.0],
+          "duration": 15
+        },
+        {
+          "animationType": "rotation",
+          "variable": "spin",
+          "centerPoint": [0.0,0.0,0.0],
+          "axis": [0.0,90.0,0.0],
+          "duration": 15
+        }
+      ]
+    },
+    {
+      "pos": [-0.5,0.247285,-0.772102],
+      "maxValue": 1.0,
+      "types": ["interactable_crate"],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "frame",
+          "centerPoint": [0.0,0.0,0.0],
+          "axis": [0.0,0.7,0.0],
+          "duration": 15
+        },
+        {
+          "animationType": "rotation",
+          "variable": "spin",
+          "centerPoint": [0.0,0.0,0.0],
+          "axis": [0.0,90.0,0.0],
+          "duration": 15
+        }
+      ]
+    },
+	{
+      "pos": [1.5,0.247285,-0.772102],
+      "maxValue": 1.0,
+      "types": ["interactable_crate"],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "frame",
+          "centerPoint": [0.0,0.0,0.0],
+          "axis": [0.0,0.7,0.0],
+          "duration": 15
+        },
+        {
+          "animationType": "rotation",
+          "variable": "spin",
+          "centerPoint": [0.0,0.0,0.0],
+          "axis": [0.0,90.0,0.0],
+          "duration": 15
+        }
+      ]
+    },
+    {
+      "pos": [-1.5,0.247285,-0.772102],
+      "maxValue": 1.0,
+      "types": ["interactable_crate"],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "frame",
+          "centerPoint": [0.0,0.0,0.0],
+          "axis": [0.0,0.7,0.0],
+          "duration": 15
+        },
+        {
+          "animationType": "rotation",
+          "variable": "spin",
+          "centerPoint": [0.0,0.0,0.0],
+          "axis": [0.0,90.0,0.0],
+          "duration": 15
+        }
+      ]
+    },
+    {
+      "pos": [0.5,-0.256349,-1.30722],
+      "maxValue": 5.0,
+      "types": ["effector_planter"],
+      "customTypes": ["planterrowunit"],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "frame",
+          "centerPoint": [0.0,0.0,0.0],
+          "axis": [0.0,0.7,0.0],
+          "duration": 15
+        },
+        {
+          "animationType": "rotation",
+          "variable": "spin",
+          "centerPoint": [0.0,0.0,0.0],
+          "axis": [0.0,90.0,0.0],
+          "duration": 15
+        }
+      ]
+    },
+    {
+      "pos": [-0.5,-0.256349,-1.30722],
+      "maxValue": 5.0,
+      "types": ["effector_planter"],
+      "customTypes": ["planterrowunit"],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "frame",
+          "centerPoint": [0.0,0.0,0.0],
+          "axis": [0.0,0.7,0.0],
+          "duration": 15
+        },
+        {
+          "animationType": "rotation",
+          "variable": "spin",
+          "centerPoint": [0.0,0.0,0.0],
+          "axis": [0.0,90.0,0.0],
+          "duration": 15
+        }
+      ]
+    },
+	{
+      "pos": [1.5,-0.256349,-1.30722],
+      "maxValue": 5.0,
+      "types": ["effector_planter"],
+      "customTypes": ["planterrowunit"],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "frame",
+          "centerPoint": [0.0,0.0,0.0],
+          "axis": [0.0,0.7,0.0],
+          "duration": 15
+        },
+        {
+          "animationType": "rotation",
+          "variable": "spin",
+          "centerPoint": [0.0,0.0,0.0],
+          "axis": [0.0,90.0,0.0],
+          "duration": 15
+        }
+      ]
+    },
+    {
+      "pos": [-1.5,-0.256349,-1.30722],
+      "maxValue": 5.0,
+      "types": ["effector_planter"],
+      "customTypes": ["planterrowunit"],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "frame",
+          "centerPoint": [0.0,0.0,0.0],
+          "axis": [0.0,0.7,0.0],
+          "duration": 15
+        },
+        {
+          "animationType": "rotation",
+          "variable": "spin",
+          "centerPoint": [0.0,0.0,0.0],
+          "axis": [0.0,90.0,0.0],
+          "duration": 15
+        }
+      ]
+    }
+  ],
+  "collisionGroups": [
+    {
+      "isInterior": true,
+      "collisions": [
+        {
+          "pos": [0.0,0.58,0.0],
+          "width": 1.0,
+          "height": 1.0,
+          "variableName": "frame",
+          "variableType": "toggle"
+        }
+      ],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "frame",
+          "axis": [0.0,0.7500000000000001,0.0]
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "collisions": [
+        {
+          "pos": [0.0,0.58,0.9],
+          "width": 1.0,
+          "height": 1.0,
+          "variableName": "spin",
+          "variableType": "toggle"
+        }
+      ],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "spin",
+          "axis": [0.0,0.0,0.09999999999999998]
+        }
+      ]
+    },
+    {
+      "collisions": [
+        {
+          "pos": [1.03429,-0.426133,-1.16989],
+          "width": 0.125,
+          "height": 0.125
+        },
+        {
+          "pos": [-1.02689,-0.426133,-1.16989],
+          "width": 0.125,
+          "height": 0.125
+        },
+        {
+          "pos": [0.0,-0.020568,1.0],
+          "width": 0.5,
+          "height": 0.2
+        }
+      ]
+    }
+  ],
+  "connectionGroups": [
+    {
+      "groupName": "HOOKUP",
+      "isHookup": true,
+      "connections": [
+        {
+          "type": "Clevis",
+          "pos": [0.0,0.15151,2.25261],
+          "distance": 2.0
+        }
+      ]
+    }
+  ],
+  "instruments": [],
+  "definitions": [
+    {
+      "subName": "_randall",
+      "name": "Randall Ballhitch 2 row Planter (Randall)",
+      "extraMaterials": ["minecraft:dye:1:1"]
+    },
+    {
+      "subName": "_allis",
+      "name": "Randall PivotFold 2 row Planter (Allis)",
+      "extraMaterials": ["minecraft:dye:14:1"]
+    },
+    {
+      "subName": "_cervidea",
+      "name": "Randall Ballhitch 2 row Planter (Cervidea)",
+      "extraMaterials": ["minecraft:dye:2:1"]
+    },
+    {
+      "subName": "_kinze",
+      "name": "Randall Pivot 2 row Planter (Kinze)",
+      "extraMaterials": ["minecraft:dye:12:1"]
+    }
+  ],
+  "rendering": {
+    "textObjects": [],
+    "animatedObjects": [
+      {
+        "objectName": "$frame",
+        "animations": [
+          {
+            "animationType": "translation",
+            "variable": "frame",
+            "centerPoint": [0.0,0.0,0.0],
+            "axis": [0.0,0.7,0.0],
+            "duration": 15
+          },
+          {
+            "animationType": "rotation",
+            "variable": "spin",
+            "centerPoint": [0.0,0.0,0.0],
+            "axis": [0.0,90.0,0.0],
+            "duration": 15
+          }
+        ]
+      },
+      {
+        "objectName": "$pivot",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "spin",
+            "centerPoint": [0.0,0.0,0.0],
+            "axis": [0.0,90.0,0.0],
+            "duration": 15
+          }
+        ]
+      }
+    ],
+    "lightObjects": [],
+    "initialVariables": ["frame","spin"],
+    "sounds": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "health": 100,
+    "materials": ["minecraft:iron_ingot:0:25"]
+  }
+}

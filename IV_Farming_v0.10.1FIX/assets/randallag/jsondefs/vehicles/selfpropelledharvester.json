@@ -1,0 +1,216 @@
+{
+  "motorized": {
+    "isRearWheelDrive": true,
+    "hasOpenTop": true,
+    "hasAutopilot": true,
+    "emptyMass": 10000,
+    "fuelCapacity": 20000,
+    "axleRatio": 5.0,
+    "brakingFactor": 1.0,
+    "dragCoefficient": 0.6
+  },
+  "parts": [
+    {
+      "pos": [-1.82206,0.35,0.0],
+      "minValue": 1.0,
+      "maxValue": 1.8,
+      "types": ["ground_wheel"]
+    },
+    {
+      "pos": [1.77282,0.35,0.0],
+      "minValue": 1.0,
+      "maxValue": 1.8,
+      "types": ["ground_wheel"]
+    },
+    {
+      "pos": [-0.92544,0.0,-2.99005],
+      "turnsWithSteer": true,
+      "minValue": 0.8,
+      "maxValue": 1.0,
+      "types": ["ground_wheel"],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "rudder",
+          "centerPoint": [-0.92544,0.0,-2.99005],
+          "axis": [0.0,1.0,0.0]
+        }
+      ]
+    },
+    {
+      "pos": [0.833738,0.0,-2.99005],
+      "turnsWithSteer": true,
+      "minValue": 0.8,
+      "maxValue": 1.0,
+      "types": ["ground_wheel"],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "rudder",
+          "centerPoint": [0.833738,0.0,-2.99005],
+          "axis": [0.0,1.0,0.0]
+        }
+      ]
+    },
+    {
+      "pos": [0.0,2.31751,0.444969],
+      "dismountPos": [2.5,1.0,1.47404],
+      "isController": true,
+      "types": ["seat"]
+    },
+    {
+      "pos": [-0.02,0.120801,2.31295],
+      "isController": true,
+      "minValue": 1.0,
+      "maxValue": 2.0,
+      "types": ["effector_harvester"]
+    },
+    {
+      "pos": [-1.37408,2.70852,-0.886858],
+      "maxValue": 1.0,
+      "types": ["interactable_crate"]
+    },
+    {
+      "pos": [-0.885789,2.70852,-0.886858],
+      "maxValue": 1.0,
+      "types": ["interactable_crate"]
+    },
+    {
+      "pos": [-1.37408,2.70852,-1.82558],
+      "maxValue": 1.0,
+      "types": ["interactable_crate"]
+    },
+    {
+      "pos": [-0.885789,2.70852,-1.82558],
+      "maxValue": 1.0,
+      "types": ["interactable_crate"]
+    },
+    {
+      "pos": [0.059126,2.31274,-0.689727],
+      "rot": [0.0,180.0,0.0],
+      "minValue": 0.3,
+      "maxValue": 0.8,
+      "types": ["engine_car"]
+    }
+  ],
+  "collisionGroups": [
+    {
+      "collisions": [
+        {
+          "pos": [1.07396,1.89575,-2.65781],
+          "width": 1.0,
+          "height": 0.125
+        },
+        {
+          "pos": [1.07396,1.89575,-1.65276],
+          "width": 1.0,
+          "height": 0.125
+        },
+        {
+          "pos": [1.07396,1.89575,-0.633541],
+          "width": 1.0,
+          "height": 0.125
+        },
+        {
+          "pos": [1.28576,1.69153,0.383197],
+          "width": 0.5,
+          "height": 0.125
+        },
+        {
+          "pos": [1.16436,1.28051,1.47404],
+          "width": 0.4,
+          "height": 0.125
+        },
+        {
+          "pos": [1.38149,0.822299,1.47404],
+          "width": 0.4,
+          "height": 0.125
+        },
+        {
+          "pos": [1.55978,0.42035,1.47404],
+          "width": 0.4,
+          "height": 0.125
+        },
+        {
+          "pos": [1.66186,0.096857,1.47404],
+          "width": 0.4,
+          "height": 0.125
+        },
+        {
+          "pos": [0.0,1.73397,0.774916],
+          "width": 2.0,
+          "height": 0.125
+        },
+        {
+          "pos": [-0.773464,2.66896,0.132482],
+          "width": 0.4,
+          "height": 0.125
+        },
+        {
+          "pos": [-0.773464,2.66896,0.581554],
+          "width": 0.4,
+          "height": 0.125
+        }
+      ]
+    }
+  ],
+  "instruments": [],
+  "definitions": [
+    {
+      "subName": "",
+      "name": "Selpropelled Harvester",
+      "extraMaterials": ["minecraft:dye:1:1"]
+    }
+  ],
+  "rendering": {
+    "textObjects": [],
+    "animatedObjects": [],
+    "lightObjects": [],
+    "sounds": [],
+    "particles": [
+      {
+        "type": "smoke",
+        "quantity": 1,
+        "transparency": 0.3,
+        "toTransparency": 0.25,
+        "scale": 1.0,
+        "color": "D9D9D9",
+        "toColor": "D9D9D9",
+        "pos": [0.538337,4.45644,-1.4498],
+        "initialVelocity": [0.0,1.0,1.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_piston_1_1_cam_1",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "type": "smoke",
+        "quantity": 5,
+        "scale": 2.5,
+        "color": "000000",
+        "pos": [0.538337,4.45644,-1.4498],
+        "initialVelocity": [0.0,1.0,1.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_backfired_1",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      }
+    ],
+    "modelType": "obj",
+    "displayTextMaxLength": 7,
+    "defaultDisplayText": "Randall"
+  },
+  "general": {
+    "description": "A self propelled harvester for all your farm's needs",
+    "health": 100,
+    "materials": ["minecraft:iron_ingot:0:128"]
+  }
+}

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":[
+        "aba",
+        "ada",
+        "aca"
+    ],
+    "key":{
+		"a":{"type": "minecraft:paper"},
+		"b":{"item": "minecraft:wheat"},
+		"c":{"item": "minecraft:wheat_seeds"},
+		"d":{"item": "minecraft:book"}
+    },
+    "result":{
+        "item": "mts:randallag.ivpartsmanual"
+    }
+}

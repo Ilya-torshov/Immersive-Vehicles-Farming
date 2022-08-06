@@ -1,0 +1,8 @@
+{
+  "general": {
+	"name" : "Caterpillar TripodLight Top",
+		"type" : "core",
+		"radius" : 0.075,
+		"materials" : ["minecraft:iron_ingot:0:4"]
+	}
+}

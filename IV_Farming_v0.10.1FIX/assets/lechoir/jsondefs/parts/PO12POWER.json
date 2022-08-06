@@ -1,0 +1,15 @@
+{
+    "general": {
+        "name" : "PO12 Power Engine",
+        "type" : "engine_car",
+		"materials" : ["minecraft:iron_ingot:0:1"]
+    },
+	"engine" : {
+        "isAutomatic" : true,
+        "starterPower" : 50,
+				"maxRPM" : 9000,
+        "fuelConsumption" : 1.12,
+        "fuelType" : "diesel",
+        "gearRatios" : [-6.33,0.0,11.83,7.9,5.79,4.32,3.2,2.47,1.81,1.35,1.0]
+	}
+}

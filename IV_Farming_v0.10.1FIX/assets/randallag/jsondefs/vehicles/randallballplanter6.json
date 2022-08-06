@@ -1,0 +1,156 @@
+{
+  "motorized": {
+    "emptyMass": 3750,
+    "brakingFactor": 1.0,
+    "dragCoefficient": 0.8
+  },
+  "parts": [
+    {
+      "pos": [1.03429,-0.326133,-1.16989],
+      "minValue": 0.4,
+      "maxValue": 1.125,
+      "types": ["ground_wheel"]
+    },
+    {
+      "pos": [-1.02689,-0.326133,-1.16989],
+      "minValue": 0.4,
+      "maxValue": 1.125,
+      "types": ["ground_wheel"]
+    },
+    {
+      "pos": [0.466456,-0.056206,-1.12274],
+      "maxValue": 1.0,
+      "types": ["interactable_crate"]
+    },
+    {
+      "pos": [-0.466456,-0.056206,-1.12274],
+      "maxValue": 1.0,
+      "types": ["interactable_crate"]
+    },
+    {
+      "pos": [1.62929,-0.056206,-1.12274],
+      "maxValue": 1.0,
+      "types": ["interactable_crate"]
+    },
+    {
+      "pos": [-1.62929,-0.056206,-1.12274],
+      "maxValue": 1.0,
+      "types": ["interactable_crate"]
+    },
+    {
+      "pos": [2.56563,-0.056206,-1.12274],
+      "maxValue": 1.0,
+      "types": ["interactable_crate"]
+    },
+    {
+      "pos": [-2.56819,-0.056206,-1.12274],
+      "maxValue": 1.0,
+      "types": ["interactable_crate"]
+    },
+    {
+      "pos": [0.471358,-0.47724,-1.40191],
+      "maxValue": 5.0,
+      "types": ["effector_planter"],
+      "customTypes": ["planterrowunit"]
+    },
+    {
+      "pos": [-0.473,-0.47724,-1.40191],
+      "maxValue": 5.0,
+      "types": ["effector_planter"],
+      "customTypes": ["planterrowunit"]
+    },
+    {
+      "pos": [1.6264,-0.47724,-1.40191],
+      "maxValue": 5.0,
+      "types": ["effector_planter"],
+      "customTypes": ["planterrowunit"]
+    },
+    {
+      "pos": [-1.62947,-0.47724,-1.40191],
+      "maxValue": 5.0,
+      "types": ["effector_planter"],
+      "customTypes": ["planterrowunit"]
+    },
+    {
+      "pos": [2.5672,-0.47724,-1.40191],
+      "maxValue": 5.0,
+      "types": ["effector_planter"],
+      "customTypes": ["planterrowunit"]
+    },
+    {
+      "pos": [-2.5682,-0.47724,-1.40191],
+      "maxValue": 5.0,
+      "types": ["effector_planter"],
+      "customTypes": ["planterrowunit"]
+    }
+  ],
+  "collisionGroups": [
+    {
+      "collisions": [
+        {
+          "pos": [1.03429,-0.426133,-1.16989],
+          "width": 0.125,
+          "height": 0.125
+        },
+        {
+          "pos": [-1.02689,-0.426133,-1.16989],
+          "width": 0.125,
+          "height": 0.125
+        },
+        {
+          "pos": [0.0,-0.020568,1.0],
+          "width": 0.5,
+          "height": 0.2
+        }
+      ]
+    }
+  ],
+  "connectionGroups": [
+    {
+      "groupName": "HOOKUP",
+      "isHookup": true,
+      "connections": [
+        {
+          "type": "Ring",
+          "pos": [0.0,0.0,1.45],
+          "distance": 2.0
+        }
+      ]
+    }
+  ],
+  "instruments": [],
+  "definitions": [
+    {
+      "subName": "_randall",
+      "name": "Randall Ballhitch 6 row Planter (Randall)",
+      "extraMaterials": ["minecraft:dye:1:1"]
+    },
+    {
+      "subName": "_allis",
+      "name": "Randall Ballhitch 6 row Planter (Allis)",
+      "extraMaterials": ["minecraft:dye:14:1"]
+    },
+    {
+      "subName": "_cervidea",
+      "name": "Randall Ballhitch 6 row Planter (Cervidea)",
+      "extraMaterials": ["minecraft:dye:2:1"]
+    },
+    {
+      "subName": "_holtlant",
+      "name": "Randall Ballhitch 6 row Planter (Holtlant)",
+      "extraMaterials": ["minecraft:dye:12:1"]
+    }
+  ],
+  "rendering": {
+    "textObjects": [],
+    "animatedObjects": [],
+    "lightObjects": [],
+    "sounds": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "health": 100,
+    "materials": ["minecraft:iron_ingot:0:64"]
+  }
+}

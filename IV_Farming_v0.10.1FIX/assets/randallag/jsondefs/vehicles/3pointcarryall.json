@@ -1,0 +1,64 @@
+{
+  "motorized": {
+    "emptyMass": 200,
+    "brakingFactor": 1.0,
+    "dragCoefficient": 0.01
+  },
+  "parts": [
+    {
+      "pos": [0.0,0.401827,-0.544623],
+      "maxValue": 1.0,
+      "types": ["interactable_crate","interactable_barrel","interactable_crafting_table","interactable_furnace","interactable_brewing_stand"]
+    }
+  ],
+  "collisionGroups": [
+    {
+      "collisions": [
+        {
+          "pos": [0.0,-0.172265,-0.542607],
+          "width": 1.0,
+          "height": 0.125
+        },
+        {
+          "pos": [0.0,0.238962,0.051224],
+          "width": 0.125,
+          "height": 0.125
+        }
+      ]
+    }
+  ],
+  "connectionGroups": [
+    {
+      "groupName": "HOOKUP",
+      "isHookup": true,
+      "connections": [
+        {
+          "type": "Ring",
+          "pos": [0.0,0.00732,4.76591],
+          "distance": 2.0
+        }
+      ]
+    }
+  ],
+  "instruments": [],
+  "definitions": [
+    {
+      "subName": "",
+      "name": "3point Caryall",
+      "extraMaterials": []
+    }
+  ],
+  "rendering": {
+    "textObjects": [],
+    "animatedObjects": [],
+    "lightObjects": [],
+    "sounds": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "description": "Carry everything and anything that you need!",
+    "health": 100,
+    "materials": ["minecraft:iron_ingot:0:2","minecraft:planks:-1:2"]
+  }
+}

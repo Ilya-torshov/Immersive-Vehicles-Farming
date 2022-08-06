@@ -1,0 +1,10 @@
+{
+  "item": {
+    "type": "scanner"
+  },
+  "general": {
+    "name": "Immersive Farming Parts Manual",
+    "description": "With IV Farmings Parts Manual you'll never not know what can fit where!\nHover over the part box to see what can fit \nShifting will make the parts cycle slower.",
+    "materials": []
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "generic": {
+    "type": "effector_plow",
+    "customType": "moldboard"
+  },
+  "effector": {
+    "type": "plow"
+  },
+  "collisionGroups": [
+    {
+      "isInterior": true,
+      "collisions": [
+        {
+          "pos": [0.0,-1.08,-1.05],
+          "width": 1.0,
+          "height": 0.02
+        },
+        {
+          "pos": [-1.0,-1.08,-2.13],
+          "width": 1.0,
+          "height": 0.02
+        },
+        {
+          "pos": [-0.5,-1.08,-1.59],
+          "width": 1.0,
+          "height": 0.02
+        },
+        {
+          "pos": [-1.5,-1.08,-2.7],
+          "width": 1.0,
+          "height": 0.02
+        },
+        {
+          "pos": [-2.5,-1.08,-3.8],
+          "width": 1.0,
+          "height": 0.02
+        },
+        {
+          "pos": [-2.0,-1.08,-3.25],
+          "width": 1.0,
+          "height": 0.02
+        },
+        {
+          "pos": [-3.0,-1.08,-4.4],
+          "width": 1.0,
+          "height": 0.02
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "subName": "",
+      "name": "moldboard plow part",
+      "extraMaterials": []
+    }
+  ],
+  "rendering": {
+    "lightObjects": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "name": "moldboard plow part",
+    "description": "Rip up the dirt so you can plant your seed ;)",
+    "health": 100,
+    "materials": ["minecraft:iron_ingot:0:2"]
+  }
+}

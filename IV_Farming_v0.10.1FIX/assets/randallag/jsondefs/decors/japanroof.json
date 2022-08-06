@@ -1,0 +1,23 @@
+{
+  "decor": {
+    "type": "generic",
+    "width": 1.0,
+    "height": 1.0,
+    "depth": 1.0,
+  },
+  "definitions": [
+    {
+      "subName": "",
+      "name": "japanproof",
+      "extraMaterials": []
+    }
+  ],
+  "rendering": {
+    "lightObjects": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "name": "japanroof",
+    "materials": ["minecraft:iron_ingot:0:7","minecraft:crafting_table:0:2"]
+  }
+}

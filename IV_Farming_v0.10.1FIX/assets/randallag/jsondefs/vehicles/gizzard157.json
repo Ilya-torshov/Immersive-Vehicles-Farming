@@ -1,0 +1,101 @@
+{
+  "motorized": {
+    "emptyMass": 572,
+    "brakingFactor": 1.0,
+    "dragCoefficient": 0.2
+  },
+  "parts": [
+    {
+      "pos": [2.17647,0.0,0.0],
+      "rot": [0.0,180.0,0.0],
+      "maxValue": 0.8,
+      "types": ["ground_wheel"]
+    },
+    {
+      "pos": [-2.17737,0.0,0.0],
+      "maxValue": 0.8,
+      "types": ["ground_wheel"]
+    },
+    {
+      "pos": [1.48135,0.0,-2.33489],
+      "maxValue": 0.8,
+      "types": ["ground_wheel"]
+    },
+    {
+      "pos": [-1.48492,0.0,-2.33489],
+      "rot": [0.0,180.0,0.0],
+      "maxValue": 0.8,
+      "types": ["ground_wheel"]
+    },
+    {
+      "pos": [1.40413,0.344245,-1.2187],
+      "maxValue": 1.125,
+      "types": ["effector_harvester"]
+    },
+    {
+      "pos": [0.531471,0.344245,-0.575688],
+      "maxValue": 1.125,
+      "types": ["effector_harvester"]
+    },
+    {
+      "pos": [-0.538032,0.344245,-0.575688],
+      "maxValue": 1.125,
+      "types": ["effector_harvester"]
+    },
+    {
+      "pos": [-1.42382,0.344245,-1.2187],
+      "maxValue": 1.125,
+      "types": ["effector_harvester"]
+    }
+  ],
+  "collisionGroups": [
+    {
+      "collisions": [
+        {
+          "pos": [0.0,0.525951,-1.2187],
+          "width": 2.0,
+          "height": 0.125
+        },
+        {
+          "pos": [0.0,0.0,0.807964],
+          "width": 0.1,
+          "height": 0.1
+        }
+      ]
+    }
+  ],
+  "connectionGroups": [
+    {
+      "groupName": "HOOKUP",
+      "isHookup": true,
+      "connections": [
+        {
+          "type": "Ring",
+          "pos": [0.0,0.536988,0.885726],
+          "distance": 2.0
+        }
+      ]
+    }
+  ],
+  "instruments": [],
+  "definitions": [
+    {
+      "subName": "_primer",
+      "name": "Gizzard 157 (bare metal)",
+      "extraMaterials": []
+    }
+  ],
+  "rendering": {
+    "textObjects": [],
+    "animatedObjects": [],
+    "lightObjects": [],
+    "sounds": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "description": "One of the Largest mowers on the market",
+    "health": 100,
+    "materials": ["minecraft:iron_ingot:0:12"]
+  }
+}

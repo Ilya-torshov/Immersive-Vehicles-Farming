@@ -1,0 +1,28 @@
+{
+    "general": {
+        "name" : "Tractor Wheel 42x14",
+        "type" : "ground_wheel",
+		"materials" : ["oredict:dyeBlack:3", "oredict:ingotIron:3", "minecraft:wool:15:3"]
+    },
+	"ground" : {
+    "isWheel": true,
+    "flatHeight": 0.4375,
+    "height" : 2.625,
+		"width" : 0.875,
+		"motiveFriction" : 1.5,
+		"lateralFriction" : 0.5
+	},
+	"rendering" : {
+		"animatedObjects" : [
+      {
+        "objectName": "tire",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "ground_isflat"
+          }
+        ]
+      }
+    ]
+	}
+}

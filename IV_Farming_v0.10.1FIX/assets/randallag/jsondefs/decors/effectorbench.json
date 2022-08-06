@@ -1,0 +1,27 @@
+{
+  "decor": {
+    "type": "generic",
+    "width": 1.0,
+    "height": 1.0,
+    "depth": 1.0,
+    "crafting": {
+      "itemTypes": ["part"],
+      "partTypes": ["fertilizer","harvester","planter","plow"]
+    }
+  },
+  "definitions": [
+    {
+      "subName": "",
+      "name": "Effector Bench",
+      "extraMaterials": []
+    }
+  ],
+  "rendering": {
+    "lightObjects": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "name": "Effector Bench",
+    "materials": ["minecraft:iron_ingot:0:7","minecraft:crafting_table:0:2"]
+  }
+}

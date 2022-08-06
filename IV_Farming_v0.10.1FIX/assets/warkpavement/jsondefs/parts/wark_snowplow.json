@@ -1,0 +1,60 @@
+{
+  "effector": {
+    "type": "snowplow",
+    "blocksWide": 3
+  },
+  "definitions": [
+    {
+      "subName": "",
+      "name": "Snowplow (orange)",
+      "extraMaterials": []
+    }
+  ],
+  "prefixFolders": "",
+  "packID": "warkpavement",
+  "systemName": "wark_snowplow",
+  "classification": "PART",
+  "general": {
+    "type": "effector_snowplow",
+    "name": "Snowplow (orange)",
+    "materials": ["minecraft:iron_ingot:0:10"]
+  },
+  "collision": [
+		{
+			"pos" : [0, -0.7, 0],
+			"width" : 1,
+			"height" : 0.2,
+			"isInterior": true
+		},
+		{
+			"pos" : [1, -0.7, 0],
+			"width" : 1,
+			"height" : 0.2,
+			"isInterior": true
+		},
+		{
+			"pos" : [-1, -0.7, 0],
+			"width" : 1,
+			"height" : 0.2,
+			"isInterior": true
+		},
+{
+			"pos" : [0, -0.7, 1],
+			"width" : 1,
+			"height" : 0.2,
+			"isInterior": true
+		},
+		{
+			"pos" : [1, -0.7, 1],
+			"width" : 1,
+			"height" : 0.2,
+			"isInterior": true
+		},
+		{
+			"pos" : [-1, -0.7, 1],
+			"width" : 1,
+			"height" : 0.2,
+			"isInterior": true
+		}
+	]
+}

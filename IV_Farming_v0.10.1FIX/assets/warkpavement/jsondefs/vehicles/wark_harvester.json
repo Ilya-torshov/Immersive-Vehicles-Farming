@@ -1,0 +1,530 @@
+{
+  "definitions" : [
+	  {
+		  "name" : "WARK Houston Blue",
+		  "subName" : "_blue",
+		  "extraMaterials" : []
+	  },
+	  {
+		  "name" : "WARK Houston Green",
+		  "subName" : "_green",
+		  "extraMaterials" : []
+	  },
+	  {
+		  "name" : "WARK Houston Orange",
+		  "subName" : "_orange",
+		  "extraMaterials" : []
+	  },
+	  {
+		  "name" : "WARK Houston Red",
+		  "subName" : "_red",
+		  "extraMaterials" : []
+	  },
+	  {
+		  "name" : "WARK Houston Yellow",
+		  "subName" : "_yellow",
+		  "extraMaterials" : []
+	  }
+	],
+	
+  "general": {
+	"description" : "",
+    "type" : "car",
+		"openTop" : false,
+		"emptyMass" : 9725,
+		"materials" : ["minecraft:iron_ingot:0:20", "minecraft:glass_pane:-1:10", "minecraft:redstone:-1:5"]
+  },
+
+  "motorized" : {
+		"isBigTruck" : true,
+    "isFrontWheelDrive" : true,
+		"isRearWheelDrive" : true,
+		"axleRatio" : 3.55,
+    "dragCoefficient" : 0.7,
+    "fuelCapacity" : 20000,
+    	"hornSound" : "mtsofficialpack:horn_truck",
+    "instruments": [
+      {
+        "pos": [
+          1.2072822,
+          1.01,
+          6.19009
+        ],
+        "rot": [
+          45.0,
+          0.0,
+          0.0
+        ],
+        "scale": 0.01953125,
+        "hudX": 72,
+        "hudY": 36,
+        "hudScale": 0.45,
+        "optionalPartNumber": 0
+      },
+			{
+        "pos": [
+          1.051032,
+					1.01,
+          6.19009
+        ],
+        "rot": [
+          45.0,
+          0.0,
+          0.0
+        ],
+        "scale": 0.01953125,
+        "hudX": 123,
+        "hudY": 36,
+        "hudScale": 0.45,
+        "optionalPartNumber": 0
+      },
+			{
+        "pos": [
+          0.894782,
+          1.01,
+          6.19009
+        ],
+        "rot": [
+          45.0,
+          0.0,
+          0.0
+        ],
+        "scale": 0.01953125,
+        "hudX": 174,
+        "hudY": 36,
+        "hudScale": 0.45,
+        "optionalPartNumber": 0
+      },
+      {
+        "pos": [
+          0.676032,
+          1.01,
+          6.19009
+        ],
+        "rot": [
+          45.0,
+          0.0,
+          0.0
+        ],
+        "scale": 0.01953125,
+        "hudX": 225,
+        "hudY": 36,
+        "hudScale": 0.45,
+        "optionalPartNumber": 0
+      },
+      {
+        "pos": [
+          0.519782,
+          1.01,
+		  6.19009
+        ],
+        "rot": [
+          45.0,
+          0.0,
+          0.0
+        ],
+        "scale": 0.01953125,
+        "hudX": 276,
+        "hudY": 36,
+        "hudScale": 0.45,
+        "optionalPartNumber": 0
+      },
+      {
+        "pos": [
+          0.363532,
+          1.01,
+          6.19009
+        ],
+        "rot": [
+          45.0,
+          0.0,
+          0.0
+        ],
+        "scale": 0.01953125,
+        "hudX": 327,
+        "hudY": 36,
+        "hudScale": 0.45,
+        "optionalPartNumber": 0
+      }
+    ]
+  },
+	
+	"parts": [
+      	{
+        "pos" : [1.45181, 0, 0.00001],
+        "types" : ["ground_wheel"],
+        "minValue" : 1.9,
+        "maxValue" : 2.7
+      	},
+      	{
+         "pos" : [-1.45181, 0, 0.00001],
+        "types" : ["ground_wheel"],
+        "minValue" : 1.9,
+        "maxValue" : 2.7
+      	},
+		{
+      	"pos" : [1.45181, -0.290625, -4.47742],
+      	"types" : ["ground_wheel"],
+			"minValue" : 0.0,
+			"maxValue" : 2.0,
+			"turnsWithSteer" : true
+    	},
+		{
+      	"pos" : [-1.45181, -0.290625, -4.47742],
+     	"types" : ["ground_wheel"],
+			"minValue" : 0.0,
+			"maxValue" : 2.0,
+			"turnsWithSteer" : true
+		},
+		{
+		"pos" : [0.014315, 2.23606, 0.968432],
+		"types" : ["seat"],
+				"isController" : true
+		},
+		{
+      	"pos" : [0.014315, -0.518948, -1.43782],
+      	"types" : ["engine_car"],
+			"minValue" : 0.0,
+			"maxValue" : 1.6
+		},
+		{
+      "pos": [0.0, -0.843751, 2.46299],
+      "types": ["effector_harvester"],
+      "animations": [
+				{
+					"animationType": "translation",
+					"centerPoint": [1, -1.0625, 1.4375],
+					"axis": [0, 1.0, 0],
+					"variable": "body_p",
+					"duration": 10,
+					"forwardsDelay": 0,
+					"reverseDelay": 0
+				}
+			]
+	        }
+  ],
+"doors":
+[
+{
+	"name": "door_l",
+	"closedPos": [0.98125, 2.48832, 1.98852],
+	"openPos": [2.01444, 2.48832, 0.40946],
+	"width": 0.6,
+	"height": 2
+},
+{
+	"name": "door_r",
+	"closedPos": [-0.98125, 2.48832, 1.98852],
+	"openPos": [-2.01444, 2.48832, 0.40946],
+	"width": 0.6,	
+	"height": 2
+},
+{
+	"name": "body_p",
+	"closedPos": [-0.516813, 2.5656, 1.15264],
+	"openPos": [-0.516813, 2.5656, 1.05264],
+	"width": 0.2,
+	"height": 0.2
+}
+],
+	"connections": [
+		{
+			"hookup": false,
+			"type": "Ring",
+			"pos": [0, -0.436686, -5.37779]
+		},
+		{
+			"hookup": false,
+			"type": "trailer_ring",
+			"pos": [0, -0.436686, -5.3777]
+		}
+	],
+  "collision": [
+	  {
+		  "pos" : [2.34444, -1.090696, 1.22597],
+		  "width" : 1.2,
+		  "height" : 0.15,
+		  "isInterior" : true
+	  },
+	  {
+		  "pos" : [2.26444, -0.490696, 1.22597],
+		  "width" : 0.4,
+		  "height" : 0.15,
+		  "isInterior" : true
+	  },
+	  {
+		  "pos" : [2.20194, -0.053195, 1.22597],
+		  "width" : 0.4,
+		  "height" : 0.15,
+		  "isInterior" : true
+	  },
+	  {
+		  "pos" : [2.13944, 0.384305, 1.22597],
+		  "width" : 0.4,
+		  "height" : 0.15,
+		  "isInterior" : true
+	  },
+	  {
+		  "pos" : [2.07694, 0.821805, 1.22597],
+		  "width" : 0.4,
+		  "height" : 0.15,
+		  "isInterior" : true
+	  },
+	  {
+		  "pos" : [2.01444, 1.2593, 1.22597],
+		  "width" : 0.4,
+		  "height" : 0.15,
+		  "isInterior" : true
+	  },
+	  {
+		  "pos" : [0.014437, 1.5718, 0.929096],
+		  "width" : 1.5,
+		  "height" : 0.15,
+		  "isInterior" : true
+	  },
+	  {
+		  "pos" : [1.2014437, 1.5718, 0.929096],
+		  "width" : 1.5,
+		  "height" : 0.15,
+		  "isInterior" : true
+	  },
+	  {
+		  "pos" : [-1.2014437, 1.5718, 0.929096],
+		  "width" : 1.5,
+		  "height" : 0.15,
+		  "isInterior" : true
+	  },
+	  {
+		  "pos" : [0, 1.5, 0],
+		  "width" : 0.1,
+		  "height" : 0.1
+	  }
+  ],
+
+  "rendering": {
+"animatedObjects":
+	[
+	{
+	"objectName": "$body_p",
+	"animations":
+		[
+		{
+		"animationType": "rotation",
+		"variable": "body_p",
+		"centerPoint": [-0.516813, 2.44814, 1.00989],
+		"axis": [-30, 0, 0],
+		"offset": 0.0,
+		"addPriorOffset": false,
+		"clampMin": 0.0,
+		"clampMax": 0.0,
+		"absolute": false,
+		"duration": 10,
+		"forwardsDelay": 0,
+		"reverseDelay": 0
+		}
+		]
+	},
+	{
+	"objectName": "$body_m",
+	"animations":
+		[
+		{
+		"animationType": "translation",
+		"variable": "body_p",
+		"centerPoint": [-0.516813, 2.44814, 1.00989],
+		"axis": [0, 1.0, 0],
+		"offset": 0.0,
+		"addPriorOffset": false,
+		"clampMin": 0.0,
+		"clampMax": 0.0,
+		"absolute": false,
+		"duration": 10,
+		"forwardsDelay": 0,
+		"reverseDelay": 0
+		}
+		]
+	},
+	{
+	"objectName": "$door_L",
+	"animations":
+		[
+		{
+		"animationType": "rotation",
+		"variable": "door_l",
+		"centerPoint": [1.01444, 1.64133, 0.81472],
+		"axis": [0, 100, 0],
+		"offset": 0.0,
+		"addPriorOffset": false,
+		"clampMin": 0.0,
+		"clampMax": 0.0,
+		"absolute": false,
+		"duration": 10,
+		"forwardsDelay": 0,
+		"reverseDelay": 0
+		}
+		]
+	},
+	{
+	"objectName": "$door_R",
+	"animations":
+		[
+		{
+		"animationType": "rotation",
+		"variable": "door_r",
+		"centerPoint": [-0.985563, 1.64133, 0.81472],
+		"axis": [0, -100, 0],
+		"offset": 0.0,
+		"addPriorOffset": false,
+		"clampMin": 0.0,
+		"clampMax": 0.0,
+		"absolute": false,
+		"duration": 10,
+		"forwardsDelay": 0,
+		"reverseDelay": 0
+		}
+		]
+	},
+	{
+	"objectName": "translucent_$door_L",
+	"animations":
+		[
+		{
+		"animationType": "rotation",
+		"variable": "door_l",
+		"centerPoint": [1.01444, 1.64133, 0.81472],
+		"axis": [0, 100, 0],
+		"offset": 0.0,
+		"addPriorOffset": false,
+		"clampMin": 0.0,
+		"clampMax": 0.0,
+		"absolute": false,
+		"duration": 10,
+		"forwardsDelay": 0,
+		"reverseDelay": 0
+		}
+		]
+	},
+	{
+	"objectName": "translucent_$door_R",
+	"animations":
+		[
+		{
+		"animationType": "rotation",
+		"variable": "door_r",
+		"centerPoint": [-0.985563, 1.64133, 0.81472],
+		"axis": [0, -100, 0],
+		"offset": 0.0,
+		"addPriorOffset": false,
+		"clampMin": 0.0,
+		"clampMax": 0.0,
+		"absolute": false,
+		"duration": 10,
+		"forwardsDelay": 0,
+		"reverseDelay": 0
+		}
+		]
+	},
+	{
+	"objectName": "$gas",
+	"animations":
+		[
+		{
+		"animationType": "rotation",
+		"variable": "throttle",
+		"centerPoint": [-0.344938, 1.64825, 1.83949],
+		"axis": [25, 0, 0],
+		"offset": 0.0,
+		"addPriorOffset": false,
+		"clampMin": 0.0,
+		"clampMax": 0.0,
+		"absolute": false,
+		"duration": 2,
+		"forwardsDelay": 0,
+		"reverseDelay": 0
+		}
+		]
+	},
+	{
+	"objectName": "$brake",
+	"animations":
+		[
+		{
+		"animationType": "rotation",
+		"variable": "brake",
+		"centerPoint": [-0.235563, 1.64825, 1.83949],
+		"axis": [25, 0, 0],
+		"offset": 0.0,
+		"addPriorOffset": false,
+		"clampMin": 0.0,
+		"clampMax": 0.0,
+		"absolute": false,
+		"duration": 2,
+		"forwardsDelay": 0,
+		"reverseDelay": 0
+		}
+		]
+	},
+	{
+	"objectName": "$p_brake",
+	"animations":
+		[
+		{
+		"animationType": "rotation",
+		"variable": "p_brake",
+		"centerPoint": [0.295687, 1.64825, 1.83949],
+		"axis": [40, 0, 0],
+		"offset": 0.0,
+		"addPriorOffset": false,
+		"clampMin": 0.0,
+		"clampMax": 0.0,
+		"absolute": false,
+		"duration": 10,
+		"forwardsDelay": 0,
+		"reverseDelay": 0
+		}
+		]
+	},
+	{
+	"objectName": "$steeringwheel",
+	"animations":
+		[
+		{
+		"animationType": "rotation",
+		"variable": "rudder",
+		"centerPoint": [0.014437, 2.36811, 1.87072],
+		"axis": [0, -5.2, 2.9],
+		"offset": 0.0,
+		"addPriorOffset": false,
+		"clampMin": 0.0,
+		"clampMax": 0.0,
+		"absolute": false,
+		"duration": 0,
+		"forwardsDelay": 0,
+		"reverseDelay": 0
+		}
+		]
+	},
+	{
+	"objectName": "$gearshift",
+	"animations":
+		[
+		{
+		"animationType": "rotation",
+		"variable": "engine_gearshift_1",
+		"centerPoint": [-0.454313, 1.60405, 1.10942],
+		"axis": [0.50, 0, 0],
+		"offset": 0.0,
+		"addPriorOffset": false,
+		"clampMin": 0.0,
+		"clampMax": 0.0,
+		"absolute": false,
+		"duration": 0,
+		"forwardsDelay": 0,
+		"reverseDelay": 0
+		}
+		]
+	}
+	]
+	
+  }
+}

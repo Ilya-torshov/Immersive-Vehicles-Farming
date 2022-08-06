@@ -1,0 +1,14 @@
+{
+  "general": {
+    "type" : "wheel",
+		"materials" : ["minecraft:dye:0:1", "minecraft:iron_ingot:0:1", "minecraft:wool:15:1"]
+  },
+	
+	"wheel" : {
+    "diameter" : 1.55,
+		"thickness" : 0.75,
+		"motiveFriction" : 1.0,
+		"lateralFriction" : 0.5,
+		"flatDiameter" : 0.7525
+	}
+}

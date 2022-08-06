@@ -1,0 +1,15 @@
+{
+	"general": {
+	"name" : "Large Tread",
+		"type" : "tread",
+		"materials" : ["minecraft:iron_ingot:0:2"]
+	},
+	
+	"tread" : {
+		"width" : 1.3125,
+		"motiveFriction" : 1.0,
+		"lateralFriction" : 1.0,
+		"extraCollisionBoxOffset" : 3.75,
+		"spacing" : 0.21875
+	}
+}

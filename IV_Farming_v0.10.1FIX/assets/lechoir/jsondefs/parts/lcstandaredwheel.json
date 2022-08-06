@@ -1,0 +1,14 @@
+{
+    "general": {
+        "name" : "LeChoir Standared wheel",
+        "type" : "ground_wheel",
+		"materials" : ["oredict:ingotIron:10"]
+    },
+	"ground" : {
+    "isWheel": true,
+    "height" : 1.4,
+		"width" : 0.6,
+		"motiveFriction" : 2,
+		"lateralFriction" : 1.8
+	}
+}

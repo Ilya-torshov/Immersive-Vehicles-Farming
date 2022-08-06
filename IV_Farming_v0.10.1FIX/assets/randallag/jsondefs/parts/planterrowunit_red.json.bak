@@ -1,0 +1,38 @@
+{
+  "generic": {
+    "type": "effector_planter",
+    "customType": "planterrowunit"
+  },
+  "effector": {
+    "type": "planter"
+  },
+  "collisionGroups": [
+    {
+      "isInterior": true,
+      "collisions": [
+        {
+          "pos": [0.0,-1.0,-0.1],
+          "width": 2.0,
+          "height": 0.125
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "subName": "",
+      "name": "Planter Row Unit (red)",
+      "extraMaterials": []
+    }
+  ],
+  "rendering": {
+    "lightObjects": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "name": "Planter Row Unit (red)",
+    "description": "This magic bit of equipment helps get your seed into the ground safer and faster than ever before!",
+    "health": 100,
+    "materials": ["minecraft:iron_ingot:0:2"]
+  }
+}

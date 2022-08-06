@@ -1,0 +1,26 @@
+{
+	"general": {
+	"name" : "WARK Blade Plow",
+	"subName" : "",
+	"description" : "Rip up the dirt so you can plant your seed with this Blade!",
+		"type" : "plow",
+		"customType" : "blade",
+		"materials" : ["minecraft:iron_ingot:0:3"]
+	},
+	"plow" : {
+		"width" : 0.5,
+		"height" : 0.2,
+		"overrideMirror" : true
+	},
+	"effector": {
+		"blocksWide": 2
+	},
+	"collision": [
+		{
+			"pos" : [0, -1.2, 0],
+			"width" : 1,
+			"height" : 0.125,
+			"isInterior":true
+		}
+	]
+}

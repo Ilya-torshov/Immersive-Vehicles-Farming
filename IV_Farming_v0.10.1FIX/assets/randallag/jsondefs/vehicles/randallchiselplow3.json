@@ -1,0 +1,228 @@
+{
+  "motorized": {
+    "emptyMass": 5000,
+    "brakingFactor": 1.0,
+    "dragCoefficient": 2.5,
+	"hookupVariables": [],
+	"isTrailer": true
+  },
+  
+  "variableModifiers": [
+    {
+        "variable": "dragCoefficient",
+        "addValue": 0,
+        "animations": [
+          {
+            "animationType": "translation",
+            "variable": "speed",
+            "centerPoint": [0.0,0.0,0.0],
+            "axis": [0.0,-5,0.0]
+          },
+          {
+            "animationType": "translation",
+            "variable": "acceleration",
+            "centerPoint": [0.0,0.0,0.0],
+            "axis": [0.0,1000,0.0],
+            "clampMin": 0.1
+          }
+        ]
+    }
+  ],
+  
+  "parts": [
+    {
+      "pos": [1.0333,0.0,0.0],
+      "minValue": 0.4,
+      "maxValue": 1.125,
+      "types": ["ground_wheel"],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "lift_up",
+          "centerPoint": [0.0,-0.009602,1.16745],
+          "axis": [-22.0,0.0,0.0],
+          "duration": 40
+        }
+      ]
+    },
+    {
+      "pos": [-1.0424,0.0,0.0],
+      "minValue": 0.4,
+      "maxValue": 1.125,
+      "types": ["ground_wheel"],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "lift_up",
+          "centerPoint": [0.0,-0.009602,1.16745],
+          "axis": [-22.0,0.0,0.0],
+          "duration": 40
+        }
+      ]
+    },
+    {
+      "pos": [-0.9,0.23611,-1.00489],
+      "maxValue": 3.0,
+      "types": ["effector_plow"],
+      "customTypes": ["chisel"]
+    },
+    {
+      "pos": [0.0,0.23611,-1.00489],
+      "maxValue": 3.0,
+      "types": ["effector_plow"],
+      "customTypes": ["chisel"]
+    },
+    {
+      "pos": [0.9,0.23611,-1.00489],
+      "maxValue": 5.0,
+      "types": ["effector_plow"],
+      "customTypes": ["chisel"]
+    },
+    {
+      "pos": [0.5,0.23611,1.09248],
+      "maxValue": 5.0,
+      "types": ["effector_plow"],
+      "customTypes": ["chisel"]
+    },
+    {
+      "pos": [-0.5,0.23611,1.09248],
+      "maxValue": 5.0,
+      "types": ["effector_plow"],
+      "customTypes": ["chisel"]
+    }
+  ],
+  
+  "collisionGroups": [
+    {
+      "isInterior": true,
+      "collisions": [
+        {
+          "pos": [0.010676,0.416888,4.38941],
+          "width": 0.25,
+          "height": 0.25,
+          "variableName": "lift_up",
+          "variableType": "toggle"
+        }
+      ],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "lift_up",
+          "axis": [0.0,0.0,0.0]
+        }
+      ]
+    },
+    {
+      "collisions": [
+        {
+          "pos": [1.0333,-0.1,0.0],
+          "width": 0.125,
+          "height": 0.125
+        },
+        {
+          "pos": [-1.0424,-0.1,0.0],
+          "width": 0.125,
+          "height": 0.125
+        },
+        {
+          "pos": [0.0,0.248215,3.93029],
+          "width": 0.2,
+          "height": 0.2
+        }
+      ]
+    }
+  ],
+  "connectionGroups": [
+    {
+      "groupName": "HOOKUP",
+      "isHookup": true,
+      "connections": [
+        {
+          "type": "Ring",
+          "pos": [0.0,0.425,4.63],
+          "distance": 2.0
+        }
+      ]
+    }
+  ],
+  "instruments": [],
+  "definitions": [
+    {
+      "subName": "_randall",
+      "name": "Randall Chisel Plow (CaseIH)",
+      "extraMaterials": ["minecraft:dye:1:1"]
+    },
+    {
+      "subName": "_allis",
+      "name": "Randall Chisel Plow (Allis)",
+      "extraMaterials": ["minecraft:dye:14:1"]
+    },
+    {
+      "subName": "_cervidea",
+      "name": "Randall Chisel Plow (Deere)",
+      "extraMaterials": ["minecraft:dye:2:1"]
+    },
+    {
+      "subName": "_holtlant",
+      "name": "Randall Chisel Plow (Holland)",
+      "extraMaterials": ["minecraft:dye:12:1"]
+    }
+  ],
+  "rendering": {
+    "textObjects": [],
+    "animatedObjects": [
+      {
+        "objectName": "$wheelArm",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "lift_up",
+            "centerPoint": [0.0,-0.009602,1.16745],
+            "axis": [-22.0,0.0,0.0],
+            "duration": 40
+          }
+        ]
+      },
+      {
+        "objectName": "$hydraulicCylinder",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "lift_up",
+            "centerPoint": [0.0,0.84196,0.632526],
+            "axis": [-1.5,0.0,0.0],
+            "duration": 40
+          }
+        ]
+      },
+      {
+        "objectName": "$hydraulicRod",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "lift_up",
+            "centerPoint": [0.0,0.84196,0.632526],
+            "axis": [-1.5,0.0,0.0],
+            "duration": 40
+          },
+          {
+            "animationType": "translation",
+            "variable": "lift_up",
+            "centerPoint": [0.0,0.84196,0.632526],
+            "axis": [0.0,-0.2,0.0],
+            "duration": 40
+          }
+        ]
+      }
+    ],
+    "lightObjects": [],
+    "initialVariables": ["lift_up"],
+    "sounds": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "health": 100,
+    "materials": ["minecraft:iron_ingot:0:25"]
+  }
+}

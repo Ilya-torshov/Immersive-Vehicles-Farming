@@ -1,0 +1,100 @@
+{
+  "motorized": {
+    "emptyMass": 1637,
+    "axleRatio": 3.55,
+    "brakingFactor": 2.0,
+    "dragCoefficient": 0.6
+  },
+    
+	"connectionGroups": [
+		{
+			"groupName": "Trailer",
+			"hookup": true,
+			"canIntiateSubConnections": true,
+			"connections": [
+				{
+					"type": "trailer_ring",
+					"pos": [0, 0.226097, 7.2698],
+					"distance": 2
+				}
+			]
+		},
+		{
+			"groupName": "Trailer",
+			"canIntiateConnections": true,
+			"connections": [
+				{
+					"type": "trailer_ring",
+					"pos": [0, 0.171875, -2.27914 ],
+					"distance": 2
+				}
+			]
+		}
+	],
+  "parts": [
+    {
+      "pos": [-1.3469,0.0,0.0],
+      "minValue": 0.8,
+      "maxValue": 1.2,
+      "types": ["ground_wheel"]
+    },
+    {
+      "pos": [1.3469,0.0,0.0],
+      "minValue": 0.8,
+      "maxValue": 1.2,
+      "types": ["ground_wheel"]
+    },
+    {
+      "pos": [-1.3469,0.0,-1.10726],
+      "turnsWithSteer": true,
+      "minValue": 0.8,
+      "maxValue": 1.2,
+      "types": ["ground_wheel"]
+    },
+    {
+      "pos": [1.3469,0.0,-1.10726],
+      "turnsWithSteer": true,
+      "minValue": 0.8,
+      "maxValue": 1.2,
+      "types": ["ground_wheel"]
+    }
+  ],
+  "collision": [
+    {
+      "pos": [0.0,0.3,-0.25],
+      "width": 3.0,
+      "height": 0.15
+    }
+  ],
+  "definitions": [
+    {
+      "subName": "_green",
+      "name": "Isolated Trailer Green",
+      "extraMaterials": []
+    },
+    {
+      "subName": "_blue",
+      "name": "Isolated Trailer Blue",
+      "extraMaterials": []
+    },
+    {
+      "subName": "_orange",
+      "name": "Isolated Trailer Orange",
+      "extraMaterials": []
+    },
+    {
+      "subName": "_red",
+      "name": "Isolated Trailer Red",
+      "extraMaterials": []
+    }
+  ],
+  "prefixFolders": "",
+  "packID": "warkpavement",
+  "systemName": "isolated_trailer_short",
+  "classification": "trailer",
+  "general": {
+    "name": "Isolated Trailer",
+    "description": "Isolated Trailer for transporting crops",
+    "materials": ["oredict:ingotIron:18"]
+  }
+}

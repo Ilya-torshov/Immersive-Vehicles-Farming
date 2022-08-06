@@ -1,0 +1,7 @@
+{
+	"packID": "lechoir",
+	"packName": "LeChoir Farming",
+	"packItem" : "lcpheonix",
+	"externalSkinsInOwnTab": true,
+	"internalSkinsInOwnTab": true
+}

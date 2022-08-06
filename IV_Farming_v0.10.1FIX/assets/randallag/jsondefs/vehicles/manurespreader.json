@@ -1,0 +1,80 @@
+{
+  "motorized": {
+    "emptyMass": 300,
+    "brakingFactor": 1.0,
+    "dragCoefficient": 0.2
+  },
+  "parts": [
+    {
+      "pos": [1.6044,0.0,0.0],
+      "maxValue": 0.8,
+      "types": ["ground_wheel"]
+    },
+    {
+      "pos": [-1.6044,0.0,0.0],
+      "maxValue": 0.8,
+      "types": ["ground_wheel"]
+    },
+    {
+      "pos": [0.0,-0.242592,-0.33752],
+      "minValue": 1.0,
+      "maxValue": 2.0,
+      "types": ["effector_fertilizer"]
+    },
+    {
+      "pos": [0.0,0.487919,1.0],
+      "maxValue": 1.0,
+      "types": ["interactable_crate"]
+    }
+  ],
+  "collisionGroups": [
+    {
+      "collisions": [
+        {
+          "pos": [0.0,0.525951,0.0],
+          "width": 2.0,
+          "height": 0.125
+        },
+        {
+          "pos": [0.0,0.0,0.807964],
+          "width": 2.0,
+          "height": 0.125
+        }
+      ]
+    }
+  ],
+  "connectionGroups": [
+    {
+      "groupName": "HOOKUP",
+      "isHookup": true,
+      "connections": [
+        {
+          "type": "Ring",
+          "pos": [0.0,0.00732,4.76591],
+          "distance": 2.0
+        }
+      ]
+    }
+  ],
+  "instruments": [],
+  "definitions": [
+    {
+      "subName": "_primer",
+      "name": "Manure Spreader",
+      "extraMaterials": []
+    }
+  ],
+  "rendering": {
+    "textObjects": [],
+    "animatedObjects": [],
+    "lightObjects": [],
+    "sounds": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "description": "Spread bone meal to grow your plants",
+    "health": 100,
+    "materials": ["minecraft:iron_ingot:0:12"]
+  }
+}

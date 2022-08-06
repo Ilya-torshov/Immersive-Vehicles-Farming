@@ -1,0 +1,16 @@
+{
+  "general": {
+    "type" : "engine_car",
+		"materials" : ["minecraft:piston:0:6", "minecraft:obsidian:0:8", "minecraft:iron_ingot:0:2"]
+  },
+	
+	"engine" : {
+    "isAutomatic" : false,
+    "starterPower" : 30,
+    "starterDuration" : 3,
+    "maxRPM" : 1300,
+    "fuelConsumption" : 0.4,
+    "gearRatios" : [-1.0, 0.0, 1.2, 0.9, 0.6],
+		"repairMaterials" : ["minecraft:obsidian:0:6"]
+	}
+}

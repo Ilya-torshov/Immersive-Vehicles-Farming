@@ -1,0 +1,48 @@
+{
+	"general": {
+		"name" : "Hunting Rifle",
+		"type" : "gun_hand_machine",
+		"description": "A hunting rifle based on the m1 garand",
+		"materials": ["minecraft:iron_ingot:0:30"]
+	},
+
+	"gun" : {
+		"autoReload" : true,
+		"capacity" : 8,
+		"fireDelay" : 12,
+		"reloadTime" : 50,
+		"gravitationalVelocity": 0.02,
+		"bulletSpreadFactor": 0.3,
+		"muzzleVelocity" : 3500,
+		"muzzleGroups" : [
+        {
+          "muzzles": [
+            {
+              "center":[0,0,0],
+              "pos":[0,0.13,1.55],
+              "rot": [0.0,0.0,0.0]
+                }
+              ]
+            }
+      ],
+		"diameter" :7.62,
+		"minCaseLength": 0,
+		"maxCaseLength": 56.44,
+		"length" : 0.53125,
+		"minPitch" : 0,
+		"maxPitch" : 0,
+		"minYaw" : 0,
+		"maxYaw" : 0,
+		"isTurret" : false,
+		"handHeld": true,
+		"handHeldNormalOffset": [0, -0.03125, 0.5625],
+		"handHeldAimedOffset": [0.31,0.11,0.5]
+	},
+	"definitions": [//Dyes: Black=0 Red =1 Green=2 Brown=3 Blue=4 Purple=5 UNU=6 Silver=7 Grey=8 Pink=9 Lime=10 Yellow=11 Light Blue=12 Magenta=13 Orange=14 White=15
+		{
+			"name": "§2Hunting Rifle",
+			"subName": "",
+			"extraMaterials": [""]
+		}
+	]
+}

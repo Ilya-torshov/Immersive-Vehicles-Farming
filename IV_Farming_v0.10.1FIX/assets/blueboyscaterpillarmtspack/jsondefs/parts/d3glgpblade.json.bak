@@ -1,0 +1,85 @@
+{
+  "general":{
+		"name": "d3glgpblade",
+		"materials": ["minecraft:iron_ingot:0:10"]
+    },
+	
+  "generic": {
+		"type": "effector_drill",
+		"useVehicleTexture": true
+	},
+	
+  "effector": {
+    "type": "drill",
+	"drillHardness": 2.5,
+	"drillSpeed": 0.5,
+	"drillDurability": 100000000
+  },
+  "prefixFolders": "",
+  "packID": "blueboyscaterpillarmtspack",
+  "systemName": "d3glgpblade",
+  "classification": "PART",
+
+  "collision": [
+		{
+			"pos" : [1.25, 0, 2.3],
+			"width" : 1,
+			"height" : 1,
+			"isInterior": true
+		},
+		{
+			"pos" : [0.5, 0, 2.3],
+			"width" : 1,
+			"height" : 1,
+			"isInterior": true
+		},
+		{
+			"pos" : [-0.5, 0, 2.3],
+			"width" : 1,
+			"height" : 1,
+			"isInterior": true
+		},
+		{
+			"pos" : [-1.25, 0, 2.3],
+			"width" : 1,
+			"height" : 1,
+			"isInterior": true
+		},
+		{
+			"pos" : [1.25, 1, 2.3],
+			"width" : 1,
+			"height" : 0.2,
+			"isInterior": true
+		},
+		{
+			"pos" : [0.5, 1, 2.3],
+			"width" : 1,
+			"height" : 0.2,
+			"isInterior": true
+		},
+		{
+			"pos" : [-0.5, 1, 2.3],
+			"width" : 1,
+			"height" : 0.2,
+			"isInterior": true
+		},
+		{
+			"pos" : [-1.25, 1, 2.3],
+			"width" : 1,
+			"height" : 0.2,
+			"isInterior": true
+		},
+		{
+			"pos" : [0.5, 1, 2.1],
+			"width" : 1,
+			"height" : 0.2,
+			"isInterior": false
+		},
+		{
+			"pos" : [-0.5, 1, 2.1],
+			"width" : 1,
+			"height" : 0.2,
+			"isInterior": false
+		}
+	]	
+}

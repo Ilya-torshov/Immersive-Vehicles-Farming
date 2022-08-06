@@ -1,0 +1,39 @@
+{
+  "generic": {
+    "type": "effector_plow",
+    "useVehicleTexture": true,
+    "customType": "chisel"
+  },
+  "effector": {
+    "type": "plow"
+  },
+  "collisionGroups": [
+    {
+      "isInterior": true,
+      "collisions": [
+        {
+          "pos": [0.0,-0.8,0.0],
+          "width": 1.0,
+          "height": 0.125
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "subName": "",
+      "modelName": "chiselplowunit",
+      "name": "Randall Chisel Plow unit",
+      "extraMaterials": []
+    }
+  ],
+  "rendering": {
+    "lightObjects": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "description": "Rip up the dirt with this chisel so you can plant your seed!",
+    "health": 100,
+    "materials": ["minecraft:iron_ingot:0:2"]
+  }
+}

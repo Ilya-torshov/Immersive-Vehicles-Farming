@@ -1,0 +1,50 @@
+{
+  "generic": {
+    "type": "effector_harvester"
+  },
+  "effector": {
+    "type": "harvester"
+  },
+  "collisionGroups": [
+    {
+      "isInterior": true,
+      "collisions": [
+        {
+          "pos": [0.0,-0.5,0.0],
+          "width": 4.0,
+          "height": 0.125
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "subName": "",
+      "name": "Harvester30 Header (yellow)",
+      "extraMaterials": []
+    }
+  ],
+  "rendering": {
+    "animatedObjects": [
+      {
+        "objectName": "$header",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "driveshaft",
+            "centerPoint": [1.50126,0.618463,2.16998],
+            "axis": [1.50126,0.0,0.0]
+          }
+        ]
+      }
+    ],
+    "lightObjects": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "name": "Harvester30 Header (yellow)",
+    "health": 100,
+    "materials": ["minecraft:iron_ingot:0:10"]
+  }
+}

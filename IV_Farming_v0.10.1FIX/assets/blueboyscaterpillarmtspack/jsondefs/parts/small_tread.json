@@ -1,0 +1,15 @@
+{
+	"general": {
+	"name" : "Small Tread",
+		"type" : "tread",
+		"materials" : ["minecraft:iron_ingot:0:2"]
+	},
+	
+	"tread" : {
+		"width" : 0.58375,
+		"motiveFriction" : 1.0,
+		"lateralFriction" : 1.0,
+		"extraCollisionBoxOffset" : 2.25,
+		"spacing" : 0.1875
+	}
+}

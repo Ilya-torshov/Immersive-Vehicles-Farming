@@ -1,0 +1,192 @@
+{
+  "motorized": {
+    "isRearWheelDrive": true,
+    "hasCruiseControl": true,
+    "fuelCapacity": 20000,
+    "axleRatio": 5.0,
+    "dragCoefficient": 0.05,
+    "hitchPos": [0.0,-0.191509,-1.59852],
+    "hitchTypes": ["Ring"],
+    "hookupPos": [0.0,-0.125,3.34375],
+    "hookupType": "Tow",
+    "instruments": [
+    ]
+  },
+  "parts": [
+	{
+      "pos": [1.05265,-0.3,3.02141],
+      "types": ["ground_wheel"],
+      "minValue": 0.01,
+      "maxValue": 1.9
+    },
+	{
+      "pos": [0,0.4,0.9],
+      "isController": true,
+      "types": ["seat"],
+      "dismountPos": [3.5,0.625,2.5]
+    },
+	{
+      "pos": [-1.05265,-0.3,3.02141],
+      "types": ["ground_wheel"],
+      "minValue": 0.01,
+      "maxValue": 1.9
+    },
+	{
+      "pos": [1.09817,-1.05,-1.37352],
+      "types": ["ground_tread"],
+	  "turnsWithSteer": true,
+      "minValue": 0.5,
+      "maxValue": 1.25,
+      "extraCollisionBoxOffset": 2,
+      "treadDroopConstant": 4.0
+    },
+	{
+      "pos": [-1.09817,-1.05,-1.37352],
+      "types": ["ground_tread"],
+	  "turnsWithSteer": true,
+      "minValue": 0.5,
+      "maxValue": 1.25,
+      "extraCollisionBoxOffset": 2,
+      "treadDroopConstant": 4.0
+    },
+	{
+		"pos" : [0.0, 0.062917,4.33216],
+		"types" : ["effector_snowplow"],
+			"minValue" : 0.0,
+			"maxValue" : 2
+ 		},
+    {
+      "pos": [0,0.2,3],
+      "rot": [0.0,0.0,0.0],
+      "types": ["engine_car"],
+      "minValue": 0.3,
+      "maxValue": 2,
+      "particleObjects": [
+        {
+          "type": "smoke",
+          "color": "#D9D9D9",
+          "toColor": "#D9D9D9",
+          "transparency": 0.25,
+          "toTransparency": 0.25,
+          "scale": 1.0,
+          "pos": [0.86372,1.90929,1.7057],
+          "velocityVector": [0.0,1.0,1.0],
+          "quantity": 2
+        },
+		{
+          "type": "smoke",
+          "color": "#D9D9D9",
+          "toColor": "#D9D9D9",
+          "transparency": 0.25,
+          "toTransparency": 0.25,
+          "scale": 1.0,
+          "pos": [0.86372,1.90929,1.7057],
+          "velocityVector": [0.0,1.0,1.0],
+          "quantity": 2
+        },
+		{
+          "type": "smoke",
+          "color": "#D9D9D9",
+          "toColor": "#D9D9D9",
+          "transparency": 0.25,
+          "toTransparency": 0.25,
+          "scale": 1.0,
+          "pos": [0.86372,1.90929,1.7057],
+          "velocityVector": [0.0,1.0,1.0],
+          "quantity": 2
+        }
+      ]
+    }
+  ],
+  "collision": [
+    {
+            "pos":[-0.74703, 0.8, 4.2],
+            "width": 0.1, 
+            "height": 0.1
+        },
+        {
+            "pos":[0.74703, 0.8, 4.2],
+            "width": 0.1, 
+            "height": 0.1
+        },
+        {
+            "pos":[-0.74703, 1.8, 1.7],
+            "width": 0.1, 
+            "height": 0.1
+        },
+        {
+            "pos":[0.74703, 1.8, 1.7],
+            "width": 0.1, 
+            "height": 0.1
+        },
+        {
+            "pos":[0.74703, 1.8, 0.5],
+            "width": 0.1, 
+            "height": 0.1
+        },
+        {
+            "pos":[-0.74703, 1.8, 0.5],
+            "width": 0.1, 
+            "height": 0.1
+        },
+        {
+            "pos":[-0.74703, 1.04784, -0.65328],
+            "width": 0.1, 
+            "height": 0.1
+        },
+        {
+            "pos":[0.74703, 1.04784, -0.65328],
+            "width": 0.1, 
+            "height": 0.1
+        }
+  ],
+  "rendering": {
+	  "lightObjects": [
+			{
+				"objectName": "$headlight",
+				"isElectric": true,
+				"color": "FCF0D5",
+				"brightnessAnimations": [
+				  
+				  {
+					"animationType": "visibility",
+					"variable": "headlight",
+					"clampMin": 1,
+					"clampMax": 1
+				  }
+				],
+				"blendableComponents": [
+					{
+					  "pos": [-0.325795,3.5959,0.161049],
+					  "axis": [0.0,0.0,1.0],
+					  "beamDiameter": 20.0,
+					  "beamLength": 30.0
+					},
+					{
+					  "pos": [0.325795,3.5959,0.161049],
+					  "axis": [0.0,0.0,1.0],
+					  "beamDiameter": 20.0,
+					  "beamLength": 30.0
+					}
+				  ]
+				}
+				]
+				},
+  "definitions": [
+    {
+      "subName": "",
+      "name": "LeChoir Pheonix Mk2",
+      "extraMaterials": ["minecraft:dye:12:1"]
+    }
+  ],
+  "prefixFolders": "",
+  "packID": "lechoir",
+  "systemName": "lcpheonix",
+  "classification": "VEHICLE",
+  "general": {
+    "openTop": false,
+    "emptyMass": 9000,
+    "description": "MK2 of the failed mk1 phoenix by lechoir",
+    "materials": ["minecraft:iron_ingot:0:30"]
+  }
+}

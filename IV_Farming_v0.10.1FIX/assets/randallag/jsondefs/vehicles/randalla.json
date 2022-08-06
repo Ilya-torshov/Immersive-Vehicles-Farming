@@ -1,0 +1,325 @@
+{
+  "motorized": {
+    "isRearWheelDrive": true,
+    "hasOpenTop": true,
+    "hasAutopilot": true,
+    "hasHeadlights": true,
+    "emptyMass": 1500,
+    "fuelCapacity": 4000,
+    "axleRatio": 3.9,
+    "brakingFactor": 1.0,
+    "dragCoefficient": 0.5
+  },
+  "parts": [
+    {
+      "pos": [-1.03,0.03,0.0],
+      "minValue": 0.875,
+      "maxValue": 1.8,
+      "types": ["ground_wheel"]
+    },
+    {
+      "pos": [1.05,0.03,0.0],
+      "minValue": 0.875,
+      "maxValue": 1.8,
+      "types": ["ground_wheel"]
+    },
+    {
+      "pos": [-1.03,-0.16,2.14692],
+      "turnsWithSteer": true,
+      "minValue": 0.5,
+      "maxValue": 1.1,
+      "types": ["ground_wheel"]
+    },
+    {
+      "pos": [1.05,-0.16,2.14692],
+      "turnsWithSteer": true,
+      "minValue": 0.5,
+      "maxValue": 1.1,
+      "types": ["ground_wheel"]
+    },
+    {
+      "pos": [-0.35,0.9,-0.34119],
+      "rot": [0.0,-10.0,0.0],
+      "dismountPos": [2.0,0.5,0.0],
+      "isController": true,
+      "types": ["seat"]
+    },
+    {
+      "pos": [0.305405,0.504937,1.084],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 0.35,
+      "types": ["engine_car"]
+    }
+  ],
+  "collisionGroups": [
+    {
+      "collisions": [
+        {
+          "pos": [-1.03,0.5,0.0],
+          "width": 0.125,
+          "height": 0.125
+        },
+        {
+          "pos": [1.05,0.5,0.0],
+          "width": 0.125,
+          "height": 0.125
+        },
+        {
+          "pos": [-1.03,0.5,2.14692],
+          "width": 0.125,
+          "height": 0.125
+        },
+        {
+          "pos": [1.05,0.5,2.14692],
+          "width": 0.125,
+          "height": 0.125
+        },
+        {
+          "pos": [0.33,1.127,1.69],
+          "width": 0.75,
+          "height": 0.125
+        },
+        {
+          "pos": [0.33,1.127,0.94],
+          "width": 0.75,
+          "height": 0.125
+        },
+        {
+          "pos": [0.33,1.127,2.22],
+          "width": 0.4,
+          "height": 0.125
+        },
+        {
+          "pos": [0.33,0.529586,0.1],
+          "width": 0.533,
+          "height": 0.125
+        },
+        {
+          "pos": [-0.33,0.529586,0.1],
+          "width": 0.533,
+          "height": 0.125
+        }
+      ]
+    }
+  ],
+  "connectionGroups": [
+    {
+      "groupName": "HOOKUP",
+      "isHookup": true,
+      "connections": [
+        {
+          "type": "Tow",
+          "pos": [0.0,-0.125,3.34375],
+          "distance": 2.0
+        }
+      ]
+    },
+    {
+      "groupName": "TRAILER",
+      "canIntiateConnections": true,
+      "isHitch": true,
+      "connections": [
+        {
+          "type": "Ring",
+          "pos": [0.0,-0.21875,-0.4375],
+          "distance": 2.0
+        }
+      ]
+    }
+  ],
+  "instruments": [
+    {
+      "pos": [0.317405,1.0174,0.36],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.012,
+      "hudX": 170,
+      "hudY": 30,
+      "hudScale": 0.46
+    },
+    {
+      "pos": [0.360333,0.898664,0.36],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.012,
+      "hudX": 238,
+      "hudY": 30,
+      "hudScale": 0.46
+    }
+  ],
+  "definitions": [
+    {
+      "subName": "_primer",
+      "name": "Randall A (Randall)",
+      "extraMaterials": []
+    }
+  ],
+  "rendering": {
+    "textObjects": [],
+    "animatedObjects": [
+      {
+        "objectName": "$Throttle",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "throttle",
+            "centerPoint": [0.003318,0.948349,0.446787],
+            "axis": [60.0,0.0,0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "$Brake",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "brake",
+            "centerPoint": [-0.340622,0.504442,0.372603],
+            "axis": [25.0,0.0,0.0]
+          },
+          {
+            "animationType": "rotation",
+            "variable": "p_brake",
+            "centerPoint": [-0.340622,0.504442,0.372603],
+            "axis": [50.0,0.0,0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "$Shift",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "engine_gearshift_1",
+            "centerPoint": [0.317405,0.674215,0.002694],
+            "axis": [25.0,0.0,0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "$Clutch",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "engine_gearshift_1",
+            "centerPoint": [-0.077157,0.504442,0.372603],
+            "axis": [5.0,0.0,0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "$Steer",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "rudder",
+            "centerPoint": [-0.326658,1.17961,0.34021],
+            "axis": [-0.0,14.87,-25.98]
+          }
+        ]
+      },
+      {
+        "objectName": "%turnbar",
+        "animations": [
+          {
+            "animationType": "translation",
+            "variable": "rudder",
+            "axis": [-0.0,-0.0,-0.0]
+          }
+        ]
+      }
+    ],
+    "lightObjects": [
+      {
+        "objectName": "&Headlight_fff1d5_FFFFF_111",
+        "emissive": true,
+        "covered": true,
+        "isElectric": true,
+        "color": "FFF1D5",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "headlight",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "blendableComponents": [
+          {
+            "pos": [0.7480909824371338,0.9739499986171722,2.1310880184173584],
+            "axis": [0.0,0.0,1.0],
+            "flareHeight": 0.38160002,
+            "flareWidth": 0.38160002,
+            "beamDiameter": 8.1408,
+            "beamLength": 24.422401
+          },
+          {
+            "pos": [0.7480909824371338,0.9739499986171722,2.1310880184173584],
+            "axis": [0.0,0.0,1.0],
+            "flareHeight": 0.38160002,
+            "flareWidth": 0.38160002,
+            "beamDiameter": 8.1408,
+            "beamLength": 24.422401
+          },
+          {
+            "pos": [-0.11488199979066849,0.9739499986171722,2.1310880184173584],
+            "axis": [0.0,0.0,1.0],
+            "flareHeight": 0.38159996,
+            "flareWidth": 0.38159996,
+            "beamDiameter": 8.1407995,
+            "beamLength": 24.422398
+          },
+          {
+            "pos": [-0.11488199979066849,0.9739499986171722,2.1310880184173584],
+            "axis": [0.0,0.0,1.0],
+            "flareHeight": 0.38159996,
+            "flareWidth": 0.38159996,
+            "beamDiameter": 8.1407995,
+            "beamLength": 24.422398
+          }
+        ]
+      }
+    ],
+    "sounds": [],
+    "particles": [
+      {
+        "type": "smoke",
+        "quantity": 1,
+        "transparency": 0.25,
+        "toTransparency": 0.25,
+        "scale": 1.0,
+        "color": "D9D9D9",
+        "pos": [0.5047109723091125,1.7225199937820435,1.0847200155258179],
+        "initialVelocity": [0.0,1.0,-1.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_piston_1_1_cam_1",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "type": "smoke",
+        "quantity": 5,
+        "scale": 2.5,
+        "color": "000000",
+        "pos": [0.5047109723091125,1.7225199937820435,1.0847200155258179],
+        "initialVelocity": [0.0,1.0,-1.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_backfired_1",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      }
+    ],
+    "modelType": "obj"
+  },
+  "general": {
+    "description": "A small tractor that was sometimes the first one to replace the horse on the farm!\nBest items to use: \nBack Wheels: Trins 18x6 Type 2.\nFront Wheels: Trin 11x3 Offroad.\nEngine: i4 or smaller",
+    "health": 100,
+    "materials": ["minecraft:iron_ingot:0:10"]
+  }
+}

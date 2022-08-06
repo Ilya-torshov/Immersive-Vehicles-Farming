@@ -1,0 +1,264 @@
+{
+  "definitions" : [
+		{
+			"subName" : "",
+    	"extraMaterials" : []
+		}
+	],
+	
+  "general": {
+    "type" : "car",
+		"openTop" : true,
+		"emptyMass" : 7800,
+		"materials" : ["minecraft:dye:1:1", "minecraft:dye:15:2", "minecraft:dye:4:1", "minecraft:iron_ingot:0:18"]
+  },
+
+  "motorized" : {
+    "fuelCapacity" : 15000,
+    "instruments" : [],
+		"controls" : []
+  },
+
+  "car" : {
+		"isBigTruck" : false,
+    "isFrontWheelDrive" : false,
+		"isRearWheelDrive" : true,
+		"axleRatio": 3.55,
+    "dragCoefficient" : 0.45,
+    "hornSound" : "mtsofficialpack:horn_car"
+  },
+	
+	"parts": [
+	{
+      "pos" : [-1.2074725, 0.0, -1.125],
+      "types" : ["tread"],
+			"minValue" : 0.56,
+			"maxValue" : 0.6
+    },
+	{
+      "pos" : [0.6171875, 0.0, -1.125],
+      "types" : ["tread"],
+			"minValue" : 0.56,
+			"maxValue" : 0.6
+
+    },
+	{
+      "pos" : [0.0, 1.0, -1.25],
+      "types" : ["seat"],
+			"isController" : true
+    },
+	{
+		"pos" : [-0.4, 1, -1.75 ],
+			"turnsWithSteer" : false,
+			"isController" : false,
+			"types" : ["crate"],
+			"minValue" : 0.0,
+			"maxValue" : 3.0
+	},
+	{
+		"pos" : [0.4, 1, -1.75 ],
+			"turnsWithSteer" : false,
+			"isController" : false,
+			"types" : ["crate"],
+			"minValue" : 0.0,
+			"maxValue" : 3.0
+	},
+	{
+		"pos" : [0.0, 0.0, 2.0923],
+		"types" : ["effector_drill"],
+		"minValue" : 0.0,
+		"maxValue" : 2,
+		"animations": [
+				{
+					"animationType": "rotation",
+					"centerPoint": [0, 0, 0],
+					"axis": [-25,  0, 0],
+					"variable": "Blade_leverbackwards",
+					"duration": 5,
+					"forwardsDelay": 0,
+					"reverseDelay": 0
+				},
+				{
+					"animationType": "rotation",
+					"centerPoint": [0, 0, 0],
+					"axis": [25, 0, 0],
+					"variable": "Blade_leverforwards",
+					"duration": 5,
+					"forwardsDelay": 0,
+					"reverseDelay": 0
+				}
+			]
+ 	},
+	{
+      "pos" : [0.0, 0.5, 0.5],
+      "types" : ["engine_car"],
+			"minValue" : 0.9,
+			"maxValue" : 1.1,
+			"exhaustPos": [-0.21875,2.97187,0.8125],
+			"exhaustVelocity": [0.0,1.250,0.0]
+    }
+  ],
+	
+  "collision": [
+		{
+      "pos" : [0, 0.625, -0.25],
+      "width" : 1,
+      "height" : 0.15
+    },
+		{
+      "pos" : [0, 1.725, 0.45],
+      "width" : 2.0,
+      "height" : 0.15
+    }
+  ],
+	"doors":
+		[
+		{
+		"name": "Door_L_Window",
+		"closedPos": [ 0.489639, 1.5, -0.3],
+		"openPos": [ 0.489639, 1.5, -0.3],
+		"width": 0.6,
+		"height": 2
+	},
+	{
+		"name": "Door_R_Window",
+		"closedPos": [-0.474567, 1, -0.3],
+		"openPos": [-0.474567, 1.5, -0.3],
+		"width": 0.6,	
+		"height": 2
+	},
+	{
+		"name": "Blade_leverbackwards",
+		"closedPos": [0.459, 1.51, -0.944565],
+		"openPos": [ 0.459, 1.51, -0.95949],
+		"width": 0.05,
+		"height": 0.05
+	},
+	{
+		"name": "Blade_leverforwards",
+		"closedPos": [0.459, 1.51, -0.99], 
+		"openPos": [0.459, 1.51, -1.03244],
+		"width": 0.05,
+		"height": 0.05
+	}
+		],
+  "rendering": {
+		"numberWindows" : 8,
+		"defaultDisplayText" : "D3C LGP",
+		"hudBackplaneTexturePercentages" : [0.9375, 1.0, 0.9375, 1.0],
+		"hudMouldingTexturePercentages" : [0.9375, 1.0, 0.9375, 1.0],
+		"displayTextMaxLength" : 7,
+		"textMarkings" : [
+			{
+				"pos" : [0, 0.69, -1.08],
+				"rot" : [0, 180, 0],
+				"scale" : 0.20,
+				"color" : "#FFFFFF"
+			}
+		],
+		"animatedObjects" : [
+			{
+				"objectName": "$Blade_lever",
+				"animations":[
+					{
+				"animationType": "rotation",
+				"centerPoint": [0.469948, 1.32796, -0.973881],
+				"axis": [12, 0, 0],
+				"variable": "Blade_leverforwards",
+				"duration": 3,
+				"skipReverseMovement": true
+					},
+					{
+				"animationType": "rotation",
+				"centerPoint": [0.469948, 1.32796, -0.973881],
+				"axis": [-12, 0, 0],
+				"variable": "Blade_leverbackwards",
+				"duration": 3,
+				"skipReverseMovement": true
+					}
+				]
+			},
+			{
+				"objectName" : "$Door_L_Window",
+				"animations":[
+					{
+				"animationType": "rotation",
+				"centerPoint" : [ 0.487392, 0, 0.211868],
+				"axis" : [0, -90, 0],
+				"variable" : "Door_L_Window",
+				"duration": 3
+					}
+					]
+			},
+			{
+				"objectName" : "$Door_R_Window",
+				"animations":[
+				{
+				"animationType": "rotation",
+				"centerPoint" : [-0.477345, 0, 0.211868],
+				"axis" : [0, 90, 0],
+				"variable" : "Door_R_Window",
+				"duration": 3
+				}
+				]
+			}
+			],
+			"rotatableModelObjects":[
+			{
+				"partName" : "$Gas",
+				"rotationPoint" : [0, 1.301803, -0.40768],
+				"rotationAxis" : [10, 0, 0],
+				"rotationVariable" : "throttle"
+			},
+			{
+				"partName" : "$Brake",
+				"rotationPoint" : [-0.3125, 0.989303, -0.40768],
+				"rotationAxis" : [-10, 0, 0],
+				"rotationVariable" : "brake"
+			},
+			{
+				"partName" : "$Brake",
+				"rotationPoint" : [-0.3125, 0.989303, -0.40768],
+				"rotationAxis" : [-20, 0, 0],
+				"rotationVariable" : "p_brake"
+			},
+			{
+				"partName" : "$Gear_Shift",
+				"rotationPoint" : [0.3125, 0.989303, -0.40768],
+				"rotationAxis" : [1, 0, 0],
+				"rotationVariable" : "engine_gearshift_1"
+			},
+			{
+				"partName" : "$roller_0",
+				"rotationPoint" : [0, 0, 1.125],
+				"rotationAxis" : [1, 0, 0],
+				"rotationVariable" : "engine_driveshaft_rotation_1"
+			},
+			{
+				"partName" : "$roll_1",
+				"rotationPoint" : [0, -0.03125, 0.5],
+				"rotationAxis" : [1, 0, 0],
+				"rotationVariable" : "engine_driveshaft_rotation_1"
+			},
+			{
+				"partName" : "$roll_2",
+				"rotationPoint" : [0, -0.03125, 0.0],
+				"rotationAxis" : [1, 0, 0],
+				"rotationVariable" : "engine_driveshaft_rotation_1"
+			},
+			{
+				"partName" : "$roll_3",
+				"rotationPoint" : [0, -0.03125, -0.5],
+				"rotationAxis" : [1, 0, 0],
+				"rotationVariable" : "engine_driveshaft_rotation_1"
+			},
+			{
+				"partName" : "$roller_1",
+				"rotationPoint" : [0, 0, -1.125],
+				"rotationAxis" : [1, 0, 0],
+				"rotationVariable" : "engine_driveshaft_rotation_1"
+			}
+			
+		]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "effector": {
+    "type": "harvester",
+    "blocksWide": 1
+  },
+  "rendering": {
+    "animatedObjects": {
+		[
+        "objectName": "$header",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "driveshaft",
+            "centerPoint": [1.50126,0.618463,2.16998],
+            "axis": [1.50126,0.0,0.0]
+          }
+		 ]
+	   ]
+	}
+  },
+  "definitions": [
+    {
+      "subName": "",
+      "name": "mowerblade",
+      "extraMaterials": []
+    }
+  ],
+  "prefixFolders": "",
+  "packID": "randallag",
+  "systemName": "mowerblade",
+  "classification": "PART",
+  "general": {
+    "type": "effector_harvester",
+    "name": "mowerblade",
+    "materials": ["minecraft:iron_ingot:0:2"]
+  },
+  "collision": [
+		{
+			"pos" : [0, -0.5, 0],
+			"width" : 1,
+			"height" : 0.125,
+			"isInterior":true
+		}
+	]
+}

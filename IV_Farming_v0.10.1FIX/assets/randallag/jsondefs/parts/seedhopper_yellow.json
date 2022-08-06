@@ -1,0 +1,27 @@
+{
+  "generic": {
+    "type": "interactable_crate"
+  },
+  "interactable": {
+    "interactionType": "crate",
+    "feedsVehicles": true,
+    "inventoryUnits": 1.0
+  },
+  "definitions": [
+    {
+      "subName": "",
+      "name": "Randall Seed Hopper (yellow)",
+      "extraMaterials": []
+    }
+  ],
+  "rendering": {
+    "lightObjects": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "name": "Randall Seed Hopper (yellow)",
+    "description": "A medium sized seed hopper to hold the seed you are going to plant",
+    "health": 100,
+    "materials": ["minecraft:iron_ingot:0:1"]
+  }
+}

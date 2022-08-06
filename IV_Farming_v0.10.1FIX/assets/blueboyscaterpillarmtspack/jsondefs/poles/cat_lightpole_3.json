@@ -1,0 +1,8 @@
+{
+  "general": {
+	"name" : "Caterpillar TripodLight Base",
+		"type" : "core",
+		"radius" : 0.125,
+		"materials" : ["minecraft:iron_ingot:0:4"]
+	}
+}

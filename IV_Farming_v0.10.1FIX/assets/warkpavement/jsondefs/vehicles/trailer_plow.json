@@ -1,0 +1,224 @@
+{
+  "motorized": {
+    "emptyMass": 437,
+    "axleRatio": 3.55,
+    "brakingFactor": 2.0,
+    "dragCoefficient": 0.6
+  },
+    
+	"connectionGroups": [
+		{
+			"groupName": "Trailer",
+			"hookup": true,
+			"canIntiateSubConnections": true,
+			"connections": [
+				{
+					"type": "trailer_ring",
+					"pos": [0.090381, 0.534395, 5.32552],
+					"distance": 2
+				}
+			]
+		}
+	],
+	"parts": [
+		{
+			"pos" : [2.88404, -0.028104, -1.47755],
+			"types" : ["wheel"],
+			"minValue" : 0.4,
+			"maxValue" : 1.125,
+            "animations": [
+				{
+					"animationType": "translation",
+					"axis": [0, -0.5, 0],
+					"variable": "button",
+					"duration": 10,
+					"forwardsDelay": 0,
+					"reverseDelay": 0
+				}
+			]
+		},
+		{
+			"pos" : [2.88404, -0.028104, 0.028104],
+			"types" : ["wheel"],
+			"minValue" : 0.4,
+			"maxValue" : 1.125,
+            "animations": [
+				{
+					"animationType": "translation",
+					"axis": [0, -0.5, 0],
+					"variable": "button",
+					"duration": 10,
+					"forwardsDelay": 0,
+					"reverseDelay": 0
+				}
+			]
+		},
+       	{
+			"pos" : [-2.65908, -0.028104, 3.01823],
+			"types" : ["wheel"],
+			"minValue" : 0.4,
+			"maxValue" : 1.125,
+            "animations": [
+				{
+					"animationType": "translation",
+					"axis": [0, -0.5, 0],
+					"variable": "button",
+					"duration": 10,
+					"forwardsDelay": 0,
+					"reverseDelay": 0
+				}
+			]
+		},
+		{
+			"pos" : [1.67034, 0.476001, -0.659138],
+			"types" : ["plow"],
+			"customTypes" : ["blade"],
+			"minValue" : 0.0,
+			"maxValue" : 3.0
+		},
+		{
+			"pos" : [1.10784, 0.476001, -0.096638],
+			"types" : ["plow"],
+			"customTypes" : ["blade"],
+			"minValue" : 0.0,
+			"maxValue" : 3.0
+		},
+		{
+			"pos" : [0.545343, 0.476001, 0.465861],
+			"types" : ["plow"],
+			"customTypes" : ["blade"],
+			"minValue" : 0.0,
+			"maxValue" : 5.0
+		},
+		{
+			"pos" : [-0.017157, 0.476001, 1.02836],
+            "inverseMirroring" : true,
+			"types" : ["plow"],
+			"customTypes" : ["blade"],
+			"minValue" : 0.0,
+			"maxValue" : 5.0
+		},
+		{
+			"pos" : [-0.579657, 0.476001, 1.59086],
+            "inverseMirroring" : true,
+			"types" : ["plow"],
+			"customTypes" : ["blade"],
+			"minValue" : 0.0,
+			"maxValue" : 5.0
+		},
+		{
+			"pos" : [-1.14216, 0.476001, 2.15336],
+            "inverseMirroring" : true,
+			"types" : ["plow"],
+			"customTypes" : ["blade"],
+			"minValue" : 0.0,
+			"maxValue" : 5.0
+		},
+		{
+			"pos" : [-1.70466, 0.476001,2.71586],
+            "inverseMirroring" : true,
+			"types" : ["plow"],
+			"customTypes" : ["blade"],
+			"minValue" : 0.0,
+			"maxValue" : 5.0
+		}
+	],
+    "doors":[
+        {
+            "name": "button",
+            "closedPos": [-1.60051, 0.532695, 3.25498],
+            "openPos": [-1.60051, 0.532695, 3.25498],
+            "width": 0.2,
+            "height": 0.2
+        }
+    ],
+      "collisionGroups": [
+    {
+      "collisions": [
+        {
+          "pos": [0.090381, 0.534395, 5.32552],
+          "width": 0.2,
+          "height": 0.2
+        }
+    ]
+    }
+    ],
+    "rendering": {
+        "animatedObjects":
+	[
+	{
+	"objectName": "&button",
+	"animations":
+		[
+		{
+		"animationType": "translation",
+		"variable": "button",
+		"axis": [0.01, 0, -0.01],
+		"offset": 0.0,
+		"addPriorOffset": false,
+		"clampMin": 0.0,
+		"clampMax": 0.0,
+		"absolute": false,
+		"duration": 10,
+		"forwardsDelay": 0,
+		"reverseDelay": 0
+		}
+		]
+	},
+    {
+	"objectName": "&piston",
+	"animations":
+		[
+		{
+		"animationType": "translation",
+		"variable": "button",
+		"axis": [0, -0.5, 0],
+		"offset": 0.0,
+		"addPriorOffset": false,
+		"clampMin": 0.0,
+		"clampMax": 0.0,
+		"absolute": false,
+		"duration": 10,
+		"forwardsDelay": 0,
+		"reverseDelay": 0
+		}
+		]
+	},
+    {
+	"objectName": "&support",
+	"animations":
+		[
+		{
+		"animationType": "translation",
+		"variable": "button",
+		"axis": [0, -0.5, 0],
+		"offset": 0.0,
+		"addPriorOffset": false,
+		"clampMin": 0.0,
+		"clampMax": 0.0,
+		"absolute": false,
+		"duration": 10,
+		"forwardsDelay": 0,
+		"reverseDelay": 0
+		}
+		]
+	}
+    ]
+    },
+  "definitions": [
+    {
+      "subName": "_green",
+      "name": "Trailer Plow Green",
+      "extraMaterials": []
+    }
+  ],
+  "prefixFolders": "",
+  "packID": "warkpavement",
+  "systemName": "trailer_plow",
+  "classification": "trailer",
+  "general": {
+    "name": "Trailer plow",
+    "description": "Trailer plow for ripping out dirt",
+    "materials": ["oredict:ingotIron:10"]
+  }
+}

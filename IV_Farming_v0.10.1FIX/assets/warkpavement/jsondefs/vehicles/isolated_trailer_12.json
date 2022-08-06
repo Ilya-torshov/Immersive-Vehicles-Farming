@@ -1,0 +1,132 @@
+{
+	"definitions": [
+		{
+			"name": "Isolated Trailer Green",
+			"subName": "_green",
+			"extraMaterials": []
+		}
+	],
+    "prefixFolders": "",
+    "packID": "warkpavement",
+    "systemName": "isolated_trailer_12",
+    "classification": "trailer",
+	"general": {
+		"description": "Isolated trailer for transporting crops",
+		"numberWindows": 0,
+		"type": "car",
+		"openTop": false,
+		"emptyMass": 4000,
+		"materials": []
+	},
+
+	"motorized": {
+		"isBigTruck": false,
+		"isTrailer": true,
+		"isFrontWheelDrive": false,
+		"isRearWheelDrive": false,
+		"hasRunningLights": true,
+		"hasHeadlights": false,
+		"hasTurnSignals": true,
+		"hasCruiseControl": false,
+		"fuelCapacity": 0,
+		"axleRatio": 0.0,
+		"dragCoefficient": 0.8,
+		"instruments": []
+	},
+	
+	"connectionGroups": [
+		{
+			"groupName": "Trailer",
+			"hookup": true,
+			"canIntiateSubConnections": true,
+			"connections": [
+				{
+					"type": "trailer_fifthwheel",
+					"pos": [0, 0.553124, 7.62249],
+					"distance": 2
+				}
+			]
+		},
+		{
+			"groupName": "Trailer",
+			"canIntiateConnections": true,
+			"connections": [
+				{
+					"type": "trailer_ring",
+					"pos": [0, 0.171, -3.02065],
+					"distance": 2
+				}
+			]
+		}
+	],
+	
+	"parts": [
+		{
+			"pos": [1.3125, 0, 1.14062],
+			"types": ["ground_wheel"],
+			"maxValue": 1.25
+		},
+		{
+			"pos": [-1.3125, 0, 1.14062],
+			"types": ["ground_wheel"],
+			"minValue": 0.5,
+			"maxValue": 1.25
+		},
+		{
+			"pos": [1.3125, 0, 0],
+			"types": ["ground_wheel"],
+			"minValue": 0.5,
+			"maxValue": 1.25
+		},
+		{
+			"pos": [-1.3125, 0, 0],
+			"types": ["ground_wheel"],
+			"minValue": 0.5,
+			"maxValue": 1.25
+		},
+		{
+			"pos": [1.3125, 0, -1.14062],
+			"types": ["ground_wheel"],
+			"minValue": 0.5,
+			"maxValue": 1.25
+		},
+		{
+			"pos": [-1.3125, 0, -1.14062],
+			"types": ["ground_wheel"],
+			"minValue": 0.5,
+			"maxValue": 1.25
+		}
+	],
+	
+	"collision": [
+		{
+			"pos": [0, 0.640625, -1.95312],
+            "isInterior": true,
+			"width": 3,
+			"height": 0.125
+		},
+		{
+			"pos": [0, 0.640625, 1.95312],
+            "isInterior": true,
+			"width": 3,
+			"height": 0.125
+		},
+		{
+			"pos": [0, 0.640625, 4.95312],
+            "isInterior": true,
+			"width": 3,
+			"height": 0.125
+		},
+		{
+			"pos": [0, 0.640625, 7.95312],
+            "isInterior": true,
+			"width": 3,
+			"height": 0.125
+		},
+		{
+			"pos": [0, 0.640625, 1.95312],
+			"width": 0.1,
+			"height": 0.1
+		}
+    ]
+}

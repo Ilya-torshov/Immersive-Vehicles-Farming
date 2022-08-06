@@ -1,0 +1,26 @@
+{
+    "ground": {
+      "isWheel": false,
+      "isTread": true,
+      "canFloat": false,
+      "canGoFlat": false,
+      "width": 1,
+      "height": 0.5,
+      "motiveFriction": 7.0,
+      "lateralFriction": 1,
+      "extraCollisionBoxOffset": 1.0,
+      "spacing": 0.204393
+    },
+  "packID": "randallag",
+    "classification": "PART",
+    "systemName": "pheonixtrack",
+    "general": {
+      "type": "ground_tread",
+      "disableMirroring": false,
+      "useVehicleTexture": true,
+      "materials": [
+        "minecraft:iron_ingot:0:15"
+      ],
+      "name": "Pheonix track"
+    }
+  }
