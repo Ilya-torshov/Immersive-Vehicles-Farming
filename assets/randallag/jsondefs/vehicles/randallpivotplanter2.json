@@ -169,7 +169,7 @@
       "isHookup": true,
       "connections": [
         {
-          "type": "Clevis",
+          "type": "trailer_ring",
           "pos": [0.0,0.15151,2.25261],
           "distance": 2.0
         }

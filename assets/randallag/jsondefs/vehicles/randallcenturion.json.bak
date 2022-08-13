@@ -1,0 +1,286 @@
+{
+  "motorized": {
+    "isRearWheelDrive": true,
+    "hasOpenTop": true,
+    "hasAutopilot": true,
+    "emptyMass": 4500,
+    "fuelCapacity": 20000,
+    "axleRatio": 5.0,
+    "brakingFactor": 1.0,
+    "dragCoefficient": 0.5
+  },
+  "parts": [
+    {
+      "pos": [-1.04635,-0.064356,0.0],
+      "minValue": 1.0,
+      "maxValue": 1.8,
+      "types": ["ground_wheel"]
+    },
+    {
+      "pos": [1.04635,-0.064356,0.0],
+      "minValue": 1.0,
+      "maxValue": 1.8,
+      "types": ["ground_wheel"]
+    },
+    {
+      "pos": [-0.941952,-0.35,3.59684],
+      "turnsWithSteer": true,
+      "minValue": 0.8,
+      "maxValue": 1.0,
+      "types": ["ground_wheel"],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "rudder",
+          "centerPoint": [-0.941952,-0.35,3.59684],
+          "axis": [0.0,-1.0,0.0]
+        }
+      ]
+    },
+    {
+      "pos": [0.936786,-0.35,3.59684],
+      "turnsWithSteer": true,
+      "minValue": 0.8,
+      "maxValue": 1.0,
+      "types": ["ground_wheel"],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "rudder",
+          "centerPoint": [0.936786,-0.35,3.59684],
+          "axis": [0.0,-1.0,0.0]
+        }
+      ]
+    },
+    {
+      "pos": [0.0,1.0,0.057603],
+      "dismountPos": [2.0,1.0,-1.24126],
+      "isController": true,
+      "types": ["seat"]
+    },
+    {
+      "pos": [0.0,0.24,2.00089],
+      "rot": [0.0,0.0,0.0],
+      "minValue": 0.3,
+      "maxValue": 0.8,
+      "types": ["engine_car"]
+    }
+  ],
+  "collisionGroups": [
+    {
+      "collisions": [
+        {
+          "pos": [-1.04635,0.3,0.0],
+          "width": 0.125,
+          "height": 0.125
+        },
+        {
+          "pos": [1.04635,0.3,0.0],
+          "width": 0.125,
+          "height": 0.125
+        },
+        {
+          "pos": [-0.940925,0.3,3.59411],
+          "width": 0.125,
+          "height": 0.125
+        },
+        {
+          "pos": [0.940925,0.3,3.59411],
+          "width": 0.125,
+          "height": 0.125
+        }
+      ]
+    }
+  ],
+  "connectionGroups": [
+    {
+      "groupName": "HOOKUP",
+      "isHookup": true,
+      "connections": [
+        {
+          "type": "Tow",
+          "pos": [0.0,-0.125,3.34375],
+          "distance": 2.0
+        }
+      ]
+    },
+    {
+      "groupName": "TRAILER",
+      "canIntiateConnections": true,
+      "isHitch": true,
+      "connections": [
+        {
+          "type": "trailer_ring",
+          "pos": [0.0,-0.1,-1.05],
+          "distance": 2.0
+        },
+		{
+          "type": "trailer_pin",
+          "pos": [0.0,-0.1,-1.05],
+          "distance": 2.0
+        }
+      ]
+    }
+  ],
+  "instruments": [
+    {
+      "pos": [-0.18,1.07139,1.0256],
+      "rot": [45.0,0.0,0.0],
+      "scale": 0.012,
+      "hudX": 132,
+      "hudY": 30,
+      "hudScale": 0.46
+    },
+    {
+      "pos": [0.0,1.07139,1.0256],
+      "rot": [45.0,0.0,0.0],
+      "scale": 0.012,
+      "hudX": 200,
+      "hudY": 30,
+      "hudScale": 0.46
+    },
+    {
+      "pos": [0.18,1.07139,1.0256],
+      "rot": [60.0,0.0,0.0],
+      "scale": 0.012,
+      "hudX": 268,
+      "hudY": 30,
+      "hudScale": 0.46
+    }
+  ],
+  "definitions": [
+    {
+      "subName": "_randall",
+      "name": "Randall Centurion (Randall)",
+      "extraMaterials": ["minecraft:dye:1:1"]
+    },
+    {
+      "subName": "_allis",
+      "name": "Randall Centurion (Allis)",
+      "extraMaterials": ["minecraft:dye:14:1"]
+    },
+    {
+      "subName": "_cervidea",
+      "name": "Randall Centurion (Cervidea)",
+      "extraMaterials": ["minecraft:dye:2:2"]
+    },
+    {
+      "subName": "_holtlant",
+      "name": "Randall Centurion (Holtlant)",
+      "extraMaterials": ["minecraft:dye:12:1"]
+    }
+  ],
+  "rendering": {
+    "textObjects": [],
+    "animatedObjects": [
+      {
+        "objectName": "$Throttle",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "throttle",
+            "centerPoint": [-0.248092,1.0753,1.06075],
+            "axis": [60.0,0.0,0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "$Brake",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "brake",
+            "centerPoint": [-0.275194,0.48274,1.19454],
+            "axis": [25.0,0.0,0.0]
+          },
+          {
+            "animationType": "rotation",
+            "variable": "p_brake",
+            "centerPoint": [-0.275194,0.48274,1.19454],
+            "axis": [-25.0,0.0,0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "$Shift",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "engine_gearshift_1",
+            "centerPoint": [0.0,0.0,1.1875],
+            "axis": [25.0,0.0,0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "$Clutch",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "engine_gearshift_1",
+            "centerPoint": [0.0,0.0,1.1875],
+            "axis": [5.0,0.0,0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "$Steer",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "rudder",
+            "centerPoint": [-0.001933,1.3945,0.943789],
+            "axis": [-0.0,-21.41,21.02]
+          }
+        ]
+      }
+    ],
+    "lightObjects": [],
+    "sounds": [],
+    "particles": [
+      {
+        "type": "smoke",
+        "quantity": 1,
+        "transparency": 0.25,
+        "toTransparency": 0.25,
+        "scale": 1.0,
+        "color": "D9D9D9",
+        "toColor": "D9D9D9",
+        "pos": [0.5718950033187866,2.3665599822998047,2.271440029144287],
+        "initialVelocity": [0.0,1.0,1.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_piston_1_1_cam_1",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "type": "smoke",
+        "quantity": 5,
+        "scale": 2.5,
+        "color": "000000",
+        "pos": [0.5718950033187866,2.3665599822998047,2.271440029144287],
+        "initialVelocity": [0.0,1.0,1.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_backfired_1",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      }
+    ],
+    "modelType": "obj",
+    "displayTextMaxLength": 7,
+    "defaultDisplayText": "Randall"
+  },
+  "general": {
+    "description": "A tractor based off the sharp and boxy designs of the late 19th Century. \nGet ready for some pulling power behind the Randall Centurian. \nLiscenced out to the largest of Tractor manufacturers!",
+    "health": 100,
+    "materials": ["minecraft:iron_ingot:0:30"]
+  }
+}

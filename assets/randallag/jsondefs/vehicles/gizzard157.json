@@ -70,7 +70,7 @@
       "isHookup": true,
       "connections": [
         {
-          "type": "Ring",
+          "type": "trailer_ring",
           "pos": [0.0,0.536988,0.885726],
           "distance": 2.0
         }

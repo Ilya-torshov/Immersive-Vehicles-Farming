@@ -120,7 +120,7 @@
       "isHitch": true,
       "connections": [
         {
-          "type": "Ring",
+          "type": "trailer_ring",
           "pos": [0.0,-0.21875,-0.4375],
           "distance": 2.0
         }

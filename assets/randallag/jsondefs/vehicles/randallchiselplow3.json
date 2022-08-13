@@ -30,11 +30,20 @@
   ],
   
   "parts": [
+	{
+      "pos": [0.0, 0.4255, 4.635],
+      "types": ["generic_clevis"],
+      "applyAfter": "$clevis_hitch",
+      "defaultPart": "iav:iav_xx_pin_trailer",
+      "isPermanent": true,
+      "animations": []
+    },
     {
       "pos": [1.0333,0.0,0.0],
       "minValue": 0.4,
       "maxValue": 1.125,
       "types": ["ground_wheel"],
+	  "defaultPart": "iav:iav_wheel_smallstandard",
       "animations": [
         {
           "animationType": "rotation",
@@ -50,6 +59,7 @@
       "minValue": 0.4,
       "maxValue": 1.125,
       "types": ["ground_wheel"],
+	  "defaultPart": "iav:iav_wheel_smallstandard",
       "animations": [
         {
           "animationType": "rotation",
@@ -112,6 +122,25 @@
         }
       ]
     },
+	{
+      "isInterior": true,
+      "collisions": [
+		{
+          "pos": [0.0, 0.4255, 4.635],
+          "width": 0.25,
+          "height": 0.25,
+          "variableName": "hitchleveling",
+          "variableType": "toggle"
+        }
+      ],
+      "animations": [
+		{
+          "animationType": "translation",
+          "variable": "hitchleveling",
+          "axis": [0.0,0.0,0.0]
+        }
+      ]
+    },
     {
       "collisions": [
         {
@@ -132,19 +161,7 @@
       ]
     }
   ],
-  "connectionGroups": [
-    {
-      "groupName": "HOOKUP",
-      "isHookup": true,
-      "connections": [
-        {
-          "type": "Ring",
-          "pos": [0.0,0.425,4.63],
-          "distance": 2.0
-        }
-      ]
-    }
-  ],
+
   "instruments": [],
   "definitions": [
     {
@@ -180,6 +197,18 @@
             "centerPoint": [0.0,-0.009602,1.16745],
             "axis": [-22.0,0.0,0.0],
             "duration": 40
+          }
+        ]
+      },
+	  {
+        "objectName": "$clevis_hitch",
+        "animations": [
+          {
+            "animationType": "translation",
+            "variable": "hitchleveling",
+            "centerPoint": [0.0, 0.4255, 4.635],
+            "axis": [0.0,-1,0.0],
+            "duration": 10
           }
         ]
       },

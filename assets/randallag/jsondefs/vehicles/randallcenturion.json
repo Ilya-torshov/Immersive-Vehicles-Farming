@@ -10,6 +10,14 @@
     "dragCoefficient": 0.5
   },
   "parts": [
+  {
+      "pos": [0.0,-0.1,-1.05],
+      "types": ["generic_clevis"],
+      "applyAfter": "",
+      "defaultPart": "iav:iav_xx_pin_vehicle",
+      "isPermanent": true,
+      "animations": []
+    },
     {
       "pos": [-1.04635,-0.064356,0.0],
       "minValue": 1.0,
@@ -110,8 +118,8 @@
       "isHitch": true,
       "connections": [
         {
-          "type": "Ring",
-          "pos": [0.0,-0.21875,-0.4375],
+          "type": "trailer_ring",
+          "pos": [0.0,-0.1,-1.05],
           "distance": 2.0
         }
       ]
